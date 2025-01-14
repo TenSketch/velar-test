@@ -1,0 +1,14 @@
+@import '../abstracts/index';
+
+
+.page-title{
+    min-height: 50vh;
+    background-image: url(/images/akf_flag.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: $snow-white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    // color: $white;
+}

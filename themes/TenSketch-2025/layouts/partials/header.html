@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg py-3 py-lg-1 fixed-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand py-0" href="/">
+      <img src="{{ .Site.Params.logo }}" alt="{{.Name}}" class="logo">
+    </a>
+
+    <!-- Navbar Toggle for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="/favicon.png" alt="favicon">
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Centered Menu -->
+      <ul class="navbar-nav ms-auto gap-2 gap-lg-0 py-4 py-md-0">
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <li class="nav-item dropdown text-end text-lg-start">
+              <a class="nav-link dropdown-toggle" href="{{ .URL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <ul class="dropdown-menu">
+                {{ range .Children }}
+                  <li class="text-end text-lg-start"><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+            <li class="nav-item text-end text-lg-start">
+              <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

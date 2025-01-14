@@ -1,0 +1,174 @@
+@import '../abstracts/variables';
+
+// Common Button Styles
+.btn {
+  // display: inline-block;
+  // font-weight: 600;
+  // text-align: center;
+  // vertical-align: middle;
+  // user-select: none;
+  @include border-radius;
+
+  padding: 0.5rem 1rem;
+  // font-size: 1rem;
+  // line-height: 1.5;
+  // cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  // overflow: hidden;
+
+  // Remove Bootstrap active and focus styles
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+
+
+
+  // Primary Colors
+  &-graphite-grey {
+    background-color: $graphite-grey;
+    color: #fff;
+    border: 2px solid $graphite-grey;
+
+    &:hover {
+      background-color: darken($graphite-grey, 10%);
+    }
+  }
+
+  &-graphite-grey-outline {
+    background-color: #fff;
+    color: $graphite-grey;
+    border: 2px solid $graphite-grey;
+
+    &:hover {
+      background-color: $graphite-grey;
+      color: #fff;
+    }
+  }
+
+  &-voyage-blue {
+    background-color: $voyage-blue;
+    color: #fff;
+    border: 2px solid $voyage-blue;
+
+    &:hover {
+      background-color: darken($voyage-blue, 10%);
+      color: $white;
+    }
+  }
+
+  &-voyage-blue-outline {
+    background-color: #fff;
+    color: $voyage-blue;
+    border: 2px solid $voyage-blue;
+
+    &:hover {
+      background-color: $voyage-blue;
+      color: #fff;
+    }
+  }
+
+  &-snow-white {
+    background-color: $snow-white;
+    color: $graphite-grey;
+    border: 2px solid $snow-white;
+
+    &:hover {
+      background-color: darken($snow-white, 10%);
+    }
+  }
+
+  &-snow-white-outline {
+    background-color: #fff;
+    color: $snow-white;
+    border: 2px solid $snow-white;
+
+    &:hover {
+      background-color: $snow-white;
+      color: $graphite-grey;
+    }
+  }
+
+  // Secondary Colors
+  &-robust-rust {
+    background-color: $robust-rust;
+    color: #fff;
+    border: 2px solid $robust-rust;
+
+    &:hover {
+      background-color: darken($robust-rust, 10%);
+    }
+  }
+
+  &-robust-rust-outline {
+    background-color: #fff;
+    color: $robust-rust;
+    border: 2px solid $robust-rust;
+
+    &:hover {
+      background-color: $robust-rust;
+      color: #fff;
+    }
+  }
+
+  &-serene-sage {
+    background-color: $serene-sage;
+    color: $graphite-grey;
+    border: 2px solid $serene-sage;
+
+    &:hover {
+      background-color: darken($serene-sage, 10%);
+    }
+  }
+
+  &-serene-sage-outline {
+    background-color: #fff;
+    color: $serene-sage;
+    border: 2px solid $serene-sage;
+
+    &:hover {
+      background-color: $serene-sage;
+      color: $graphite-grey;
+    }
+  }
+
+  &-soft-sky {
+    background-color: $soft-sky;
+    color: $graphite-grey;
+    border: 2px solid $soft-sky;
+
+    &:hover {
+      background-color: darken($soft-sky, 10%);
+    }
+  }
+
+  &-soft-sky-outline {
+    background-color: #fff;
+    color: $soft-sky;
+    border: 2px solid $soft-sky;
+
+    &:hover {
+      background-color: $soft-sky;
+      color: $graphite-grey;
+    }
+  }
+
+  // Button Sizes
+  &-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  &-md {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  &-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+  }
+}

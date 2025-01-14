@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Velar | Modular Interiors and Construction Innovations</title>
+    <link>/home/</link>
+    <description>Recent content in Homes on Velar | Modular Interiors and Construction Innovations</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2024 15:37:10 +0530</lastBuildDate>
+    <atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gallery</title>
+      <link>/home/gallery/</link>
+      <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
+      <guid>/home/gallery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Urban Square APARTMENT</title>
+      <link>/home/hero/</link>
+      <pubDate>Fri, 27 Dec 2024 20:12:17 +0530</pubDate>
+      <guid>/home/hero/</guid>
+      <description>&lt;!-- Video by Tom Fisk: https://www.pexels.com/video/high-rise-buildings-in-indonesia-4984216/ --&gt;</description>
+    </item>
+    <item>
+      <title>Upcoming Project</title>
+      <link>/home/upcoming-projects/</link>
+      <pubDate>Fri, 27 Dec 2024 20:12:16 +0530</pubDate>
+      <guid>/home/upcoming-projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project Portfolio</title>
+      <link>/home/projects-portfolio/</link>
+      <pubDate>Fri, 27 Dec 2024 20:11:16 +0530</pubDate>
+      <guid>/home/projects-portfolio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testimonials</title>
+      <link>/home/testimonials/</link>
+      <pubDate>Wed, 25 Dec 2024 00:13:10 +0530</pubDate>
+      <guid>/home/testimonials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>/home/about/</link>
+      <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
+      <guid>/home/about/</guid>
+      <description>&lt;h4 id=&#34;mission&#34;&gt;Mission:&lt;/h4&gt;&#xA;&lt;p&gt;To &lt;strong&gt;BUILD&lt;/strong&gt; transformative spaces that merge functionality, innovation, and sustainability, creating environments that inspire and elevate communities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our USP</title>
+      <link>/home/usp/</link>
+      <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
+      <guid>/home/usp/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

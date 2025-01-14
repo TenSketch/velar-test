@@ -1,0 +1,61 @@
+@import '../abstracts/variables';
+
+.footer {
+    background-color: $soft-sky; // Light green
+  
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: $voyage-blue; // Voyage Blue
+    }
+  
+    .footer-link {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: $voyage-blue; // Voyage Blue on hover
+      }
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .form-control {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      transition: border-color 0.3s ease;
+  
+      &:focus {
+        border-color: $voyage-blue; // Voyage Blue
+        box-shadow: 0 0 5px rgba(24, 66, 143, 0.5);
+      }
+    }
+  
+    button.btn {
+      background-color: $voyage-blue;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #1a4fa5;
+      }
+    }
+  
+    .footer-bottom {
+    //   background-color: #c8e6c9; // Light green
+    //   padding: 1rem 0;
+        p{
+            font-size: 0.9rem;
+        }
+      .text-red {
+        color: #e53935; // Red
+      }
+    }
+  }
+  

@@ -1,0 +1,42 @@
+@import '../abstracts/variables';
+
+.navbar {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    // @include glassmorphism($white); // Uses default values
+background-color: $white;
+    .navbar-brand {
+        flex: 0 0 30%;
+        img {
+            width: clamp(30%, 130px, 70%);
+            transition: width 0.3s ease;
+        }
+    }
+    .navbar-toggler{
+        img{
+            width: 30px;
+        }
+    }
+    .navbar-collapse{
+
+        .navbar-nav{
+
+            .nav-item{
+
+                .nav-link{
+                    @include text-primary;
+                }
+            }
+        }
+    }
+
+    // Add styles for the scrolled state
+    &.scrolled {
+        background-color: white;
+        padding-top: 10px; // Adjust as needed
+        padding-bottom: 10px; // Adjust as needed
+
+        .navbar-brand img {
+            width: 100px; // Adjust as needed
+        }
+    }
+}

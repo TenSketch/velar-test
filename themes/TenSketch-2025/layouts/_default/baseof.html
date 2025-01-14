@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <div id="loader-overlay">
+    <div class="logo-wrapper">
+      <img id="logo" src="/images/logo-without-icon.png" alt="Logo without Icon">
+      <img id="e-icon" src="/images/ICON.png" alt="E Icon">
+    </div>
+  </div>
+  
+  
+  {{ partial "header.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer.html" . }}
+  {{ partialCached "head/js.html" . }}
+
+</body>
+
+</html>

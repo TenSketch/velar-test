@@ -1,0 +1,93 @@
+// Mixins
+@mixin text-primary{
+    color:$voyage-blue;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin border-radius($radius: 10px) {
+    border-radius: $radius;
+}
+
+@mixin responsive-font($desktop, $mobile) {
+    font-size: $desktop;
+
+    @media screen and (max-width: 768px) {
+        font-size: $mobile;
+    }
+}
+
+// Define breakpoints  
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large-desktop: 1440px;
+
+// Media query mixins  
+@mixin media-mobile {
+    @media (max-width: #{$breakpoint-mobile}) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media (min-width: #{$breakpoint-mobile + 1}) and (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+@mixin media-desktop {
+    @media (min-width: #{$breakpoint-tablet + 1}) {
+        @content;
+    }
+}
+
+
+// Example usage  
+// .container {  
+//   background-color: blue;  
+
+//   @include media-mobile {  
+//     background-color: red;  
+//   }  
+
+//   @include media-tablet {  
+//     background-color: green;  
+//   }  
+
+//   @include media-desktop {  
+//     background-color: yellow;  
+//   }  
+
+//   @include media-large-desktop {  
+//     background-color: orange;  
+//   }  
+// }
+@include media-mobile {}
+
+
+@include media-tablet {}
+
+
+@include media-desktop {}
+
+@mixin background-mixin($bg-color: $green-dark, $bg-attachment: fixed) {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: $bg-attachment;
+    background-color: $bg-color;
+}
+
+@mixin glassmorphism($background: rgba(255, 255, 255, 0.6), $blur: 7px, $border-radius: 10px) {
+    background: $background;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur); // For Safari support
+    border-radius: $border-radius;
+    // border: 1px solid rgba(255, 255, 255, 0.18);
+}

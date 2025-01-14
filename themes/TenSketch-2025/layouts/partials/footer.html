@@ -1,0 +1,80 @@
+<footer id="contact-us" class="footer py-5">
+  {{ $footer := .Site.GetPage "footer.md" }}
+  {{ if $footer }}
+  <div class="container">
+    <div class="row justify-content-between">
+      <!-- Quick Links -->
+      <div class="col-md-4">
+        <h4 class="subtitle fst-italic mb-3">Quick links</h4>
+        <ul class="list-unstyled">
+          {{ range $footer.Params.quick_links }}
+          <li>
+            <a href="{{ .url }}" class="footer-link">{{ .name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="col-md-4">
+        <h4 class="subtitle">Contact Us</h4>
+        <p>{{ $footer.Params.contact.address }}</p>
+        <p><strong>Landmark:</strong> {{ $footer.Params.contact.landmark }}</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:{{ $footer.Params.contact.email }}" class="footer-link">{{ $footer.Params.contact.email }}</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:{{ $footer.Params.contact.phone }}" class="footer-link">{{ $footer.Params.contact.phone }}</a></p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/{{ $footer.Params.contact.whatsapp }}" target="_blank" class="footer-link">WhatsApp</a></p>
+        <h4 class="subtitle">Follow Us</h4>
+        <ul class="list-inline">
+          {{ range $footer.Params.social_links }}
+          <li class="list-inline-item">
+            <a href="{{ .url }}" target="_blank" class="footer-link"><i class="{{ .icon }}"></i></a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <!-- <div class="col-md-3">
+        
+      </div> -->
+
+      <!-- Contact Form -->
+      <div class="col-md-4">
+        <h4 class="subtitle">Get in Touch</h4>
+        <form id="contact" name="Contact" method="POST" action="/thank-you" netlify>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" name="Name" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" class="form-control" name="Mobile" id="mobile" maxlength="10" minlength="10" placeholder="Enter your 10-digit mobile no" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="Email" id="email" placeholder="abc@mail.com" required>
+          </div>
+          <div class="form-group mt-3">
+            <label for="message">Message:</label>
+            <textarea class="form-control" name="Message" id="message" rows="3" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+        </form>
+      </div>
+    </div>
+    <hr class="">
+    <div class="row footer-bottom  justify-content-between">
+      <div class="col-auto">
+        <p class="mb-0">&copy;<span class="d-none"> 2025 - </span><script>document.write(new Date().getFullYear());</script>&nbsp;VELAR INFRA PROJECTS LLC. All rights reserved.</p>
+      </div>
+        
+      <div class="col-auto">
+        <p class="mb-0">Sketched with <i class="fa fa-heart" aria-hidden="true"></i> by
+          <a href="https://www.tensketch.com/" title="TenSketch website" class="text-red-alert">TenSketch</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+</footer>

@@ -1,0 +1,38 @@
+// Primary Colors
+$graphite-grey: #5C5D60;
+$voyage-blue: #18428F;
+$snow-white: #FEFEFA;
+
+// Secondary Colors
+$robust-rust: #A74F2A;
+$serene-sage: #BCC4B2;
+$soft-sky: #D0E8E4;
+
+// Define primary colors
+$primary-colors: (
+  graphite-grey: #5C5D60,
+  voyage-blue: #18428F,
+  snow-white: #FEFEFA
+);
+
+// Define secondary colors
+$secondary-colors: (
+  robust-rust: #A74F2A,
+  serene-sage: #BCC4B2,
+  soft-sky: #D0E8E4
+);
+
+
+// Neutrals
+$white: #FFF;          // Pure white for backgrounds or text
+$gray-light: #dbdbdb;     // Very light gray for section backgrounds
+$gray-medium: #CCC;    // Medium gray for dividers or borders
+$gray-dark: #333;      // Dark gray for body text
+
+
+
+$navbar-height:10vh;
+$font-primary: "Montserrat", serif;
+$fw-bold:700;
+$fw-semibold:600;
+// $italic: italic;
