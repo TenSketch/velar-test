@@ -2,101 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Velar | Modular Interiors and Construction Innovations</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Velar | Modular Interiors and Construction Innovations</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jan 2025 17:02:05 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Footer</title>
-      <link>//localhost:1313/footer/</link>
+      <link>/footer/</link>
       <pubDate>Fri, 10 Jan 2025 17:02:05 +0530</pubDate>
-      <guid>//localhost:1313/footer/</guid>
+      <guid>/footer/</guid>
       <description></description>
     </item>
     <item>
       <title>Terms and Conditions</title>
-      <link>//localhost:1313/terms-and-conditions/</link>
+      <link>/terms-and-conditions/</link>
       <pubDate>Tue, 31 Dec 2024 17:58:14 +0530</pubDate>
-      <guid>//localhost:1313/terms-and-conditions/</guid>
+      <guid>/terms-and-conditions/</guid>
       <description>&lt;h5 id=&#34;1-restrictions-on-the-use-of-content&#34;&gt;&lt;strong&gt;1. Restrictions on the Use of Content&lt;/strong&gt;&lt;/h5&gt;&#xA;&lt;p&gt;You may download and use designated content solely for purposes aligned with AK Foundation’s charitable mission. Redistribution or use for a fee is prohibited. Access from outside India is at your own risk, and compliance with local laws is required.&lt;/p&gt;&#xA;&lt;h5 id=&#34;2-registration-and-profile-creation&#34;&gt;&lt;strong&gt;2. Registration and Profile Creation&lt;/strong&gt;&lt;/h5&gt;&#xA;&lt;p&gt;Registration for certain site areas requires accurate, current information. You are responsible for maintaining confidentiality and accuracy; misuse may result in suspension or termination of access.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gallery</title>
-      <link>//localhost:1313/home/gallery/</link>
+      <link>/home/gallery/</link>
       <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
-      <guid>//localhost:1313/home/gallery/</guid>
+      <guid>/home/gallery/</guid>
       <description></description>
     </item>
     <item>
-      <title>Urban Square APARTMENT</title>
-      <link>//localhost:1313/home/hero/</link>
+      <title>Urban Square</title>
+      <link>/home/hero/</link>
       <pubDate>Fri, 27 Dec 2024 20:12:17 +0530</pubDate>
-      <guid>//localhost:1313/home/hero/</guid>
+      <guid>/home/hero/</guid>
       <description>&lt;!-- Video by Tom Fisk: https://www.pexels.com/video/high-rise-buildings-in-indonesia-4984216/ --&gt;</description>
     </item>
     <item>
-      <title>Upcoming Project</title>
-      <link>//localhost:1313/home/upcoming-projects/</link>
+      <title>URBAN SQUARE APARTMENTS</title>
+      <link>/home/upcoming-projects/</link>
       <pubDate>Fri, 27 Dec 2024 20:12:16 +0530</pubDate>
-      <guid>//localhost:1313/home/upcoming-projects/</guid>
+      <guid>/home/upcoming-projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Project Portfolio</title>
-      <link>//localhost:1313/home/projects-portfolio/</link>
+      <link>/home/projects-portfolio/</link>
       <pubDate>Fri, 27 Dec 2024 20:11:16 +0530</pubDate>
-      <guid>//localhost:1313/home/projects-portfolio/</guid>
+      <guid>/home/projects-portfolio/</guid>
       <description></description>
     </item>
     <item>
       <title>Testimonials</title>
-      <link>//localhost:1313/home/testimonials/</link>
+      <link>/home/testimonials/</link>
       <pubDate>Wed, 25 Dec 2024 00:13:10 +0530</pubDate>
-      <guid>//localhost:1313/home/testimonials/</guid>
+      <guid>/home/testimonials/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>//localhost:1313/home/about/</link>
+      <link>/home/about/</link>
       <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
-      <guid>//localhost:1313/home/about/</guid>
+      <guid>/home/about/</guid>
       <description>&lt;h4 id=&#34;mission&#34;&gt;Mission:&lt;/h4&gt;&#xA;&lt;p&gt;To &lt;strong&gt;BUILD&lt;/strong&gt; transformative spaces that merge functionality, innovation, and sustainability, creating environments that inspire and elevate communities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Our USP</title>
-      <link>//localhost:1313/home/usp/</link>
+      <link>/home/usp/</link>
       <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
-      <guid>//localhost:1313/home/usp/</guid>
+      <guid>/home/usp/</guid>
       <description></description>
     </item>
     <item>
       <title>Thank you</title>
-      <link>//localhost:1313/thank-you/</link>
+      <link>/thank-you/</link>
       <pubDate>Sun, 15 Dec 2024 15:59:23 +0530</pubDate>
-      <guid>//localhost:1313/thank-you/</guid>
+      <guid>/thank-you/</guid>
       <description></description>
     </item>
     <item>
       <title>Contact Us</title>
-      <link>//localhost:1313/contact-us/</link>
+      <link>/contact-us/</link>
       <pubDate>Tue, 03 Dec 2024 16:01:41 +0530</pubDate>
-      <guid>//localhost:1313/contact-us/</guid>
+      <guid>/contact-us/</guid>
       <description></description>
     </item>
     <item>
       <title>About Us</title>
-      <link>//localhost:1313/about-us/</link>
+      <link>/about-us/</link>
       <pubDate>Tue, 03 Dec 2024 16:01:28 +0530</pubDate>
-      <guid>//localhost:1313/about-us/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Be a Part of the Change</title>
-      <link>//localhost:1313/home/cta/</link>
-      <pubDate>Sun, 01 Dec 2024 01:21:07 +0530</pubDate>
-      <guid>//localhost:1313/home/cta/</guid>
+      <guid>/about-us/</guid>
       <description></description>
     </item>
   </channel>

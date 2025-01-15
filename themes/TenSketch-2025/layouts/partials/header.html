@@ -2,17 +2,28 @@
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand py-0" href="/">
-      <img src="{{ .Site.Params.logo }}" alt="{{.Name}}" class="logo">
+      <!-- <img src="{{ .Site.Params.logo }}" alt="{{.Name}}" class="logo"> -->
+      <img 
+      id="navbar-logo"
+      src="{{ .Site.Params.logo_default }}"
+      data-default="{{ .Site.Params.logo_default }}"
+      data-scrolled="{{ .Site.Params.logo_scrolled }}"
+      alt="{{.Name}}" class="logo">
     </a>
 
     <!-- Navbar Toggle for Mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <img src="/favicon.png" alt="favicon">
+    <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <img src="/favicon.png" alt="favicon"> -->
+      <img 
+      id="logoicon"
+      src="{{ .Site.Params.logoicon }}"
+      data-default="{{ .Site.Params.logoicon }}"
+      data-scrolled="{{ .Site.Params.logoicon_scrolled }}"
+      alt="{{.Name}}" class="logo">
     </button>
 
     <!-- Navbar Content -->
     <div class="collapse navbar-collapse" id="navbarContent">
-      <!-- Centered Menu -->
       <ul class="navbar-nav ms-auto gap-2 gap-lg-0 py-4 py-md-0">
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
@@ -32,7 +43,20 @@
             </li>
           {{ end }}
         {{ end }}
+      
+        <!-- Add mobile and Instagram links -->
+        <li class="nav-item text-end text-lg-start">
+          <a class="nav-link" href="tel:{{ .Site.Params.phone }}">
+            <i class="fas fa-phone-alt"></i> Call Us
+          </a>
+        </li>
+        <li class="nav-item text-end text-lg-start">
+          <a class="nav-link" href="{{ .Site.Params.instagram }}" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </li>
       </ul>
+      
     </div>
   </div>
 </nav>

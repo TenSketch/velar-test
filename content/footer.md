@@ -13,11 +13,11 @@ quick_links:
   - name: "Contact Us"
     url: "/contact"
 contact:
-  address: "125, Rangarajapuram Main Road, Kodambakkam, Chennai - 600 024"
+  address: "12A/31, Viswanathapuram 3rd Street, Kodambakkam, Chennai - 600024"
 #   landmark: "Adjacent to 20 feet Sacred Heart Jesus Christ Statue & Egmore Police Museum."
   email: "info@velarinfra.com"
-  phone: "+91 98844 10011"
-  whatsapp: "+91 98844 10011"
+  phone: "+919884693693"
+  whatsapp: "+919884693693"
 social_links:
   - platform: "Facebook"
     url: "https://facebook.com"

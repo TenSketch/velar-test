@@ -30,7 +30,7 @@
   // Primary Colors
   &-graphite-grey {
     background-color: $graphite-grey;
-    color: #fff;
+    color: $soft-sky;
     border: 2px solid $graphite-grey;
 
     &:hover {
@@ -39,19 +39,19 @@
   }
 
   &-graphite-grey-outline {
-    background-color: #fff;
+    background-color: $soft-sky;
     color: $graphite-grey;
     border: 2px solid $graphite-grey;
 
     &:hover {
       background-color: $graphite-grey;
-      color: #fff;
+      color: $soft-sky;
     }
   }
 
   &-voyage-blue {
     background-color: $voyage-blue;
-    color: #fff;
+    color: $soft-sky;
     border: 2px solid $voyage-blue;
 
     &:hover {
@@ -61,13 +61,13 @@
   }
 
   &-voyage-blue-outline {
-    background-color: #fff;
+    background-color: transparent;
     color: $voyage-blue;
     border: 2px solid $voyage-blue;
 
     &:hover {
       background-color: $voyage-blue;
-      color: #fff;
+      color: $soft-sky;
     }
   }
 
@@ -82,7 +82,7 @@
   }
 
   &-snow-white-outline {
-    background-color: #fff;
+    background-color: $soft-sky;
     color: $snow-white;
     border: 2px solid $snow-white;
 
@@ -95,7 +95,7 @@
   // Secondary Colors
   &-robust-rust {
     background-color: $robust-rust;
-    color: #fff;
+    color: $soft-sky;
     border: 2px solid $robust-rust;
 
     &:hover {
@@ -104,13 +104,13 @@
   }
 
   &-robust-rust-outline {
-    background-color: #fff;
+    background-color: $soft-sky;
     color: $robust-rust;
     border: 2px solid $robust-rust;
 
     &:hover {
       background-color: $robust-rust;
-      color: #fff;
+      color: $soft-sky;
     }
   }
 
@@ -125,7 +125,7 @@
   }
 
   &-serene-sage-outline {
-    background-color: #fff;
+    background-color: $soft-sky;
     color: $serene-sage;
     border: 2px solid $serene-sage;
 
@@ -146,7 +146,7 @@
   }
 
   &-soft-sky-outline {
-    background-color: #fff;
+    background-color: $soft-sky;
     color: $soft-sky;
     border: 2px solid $soft-sky;
 

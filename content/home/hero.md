@@ -1,9 +1,10 @@
 ---
-title: "Urban Square APARTMENT"
-subtitle: "Exterior day render presentation"
-brief: "Turning architectural dreams into reality"
+title: "Urban Square"
+description: "A premium bespoke apartments at Kalapatti, Coimbatore"
+subtitle: "Stay tuned for the Grand Launch on January 25, 2025!"
+# brief: "Turning architectural dreams into reality"
 link: "#upcoming"
-background: "/videos/KALAPATTI.mp4"
+background: "/videos/stock-video.mp4"
 layout: "home"
 section: "hero"
 date: 2024-12-27T20:12:17+05:30

@@ -6,14 +6,26 @@
     setTimeout(() => {
       loaderOverlay.style.opacity = "0";
       loaderOverlay.style.pointerEvents = "none";
-    }, 2500);
+    }, 2e3);
   });
   document.addEventListener("scroll", function() {
     const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 50) {
+    const logo = document.getElementById("navbar-logo");
+    if (!logo) return;
+    const defaultLogo = logo.dataset.default;
+    const scrolledLogo = logo.dataset.scrolled;
+    const logoicon = document.getElementById("logoicon");
+    if (!logoicon) return;
+    const defaultlogicon = logoicon.dataset.default;
+    const scrolledlogicon = logoicon.dataset.scrolled;
+    if (window.scrollY > 100) {
       navbar.classList.add("scrolled");
+      logo.src = scrolledLogo;
+      logoicon.src = scrolledlogicon;
     } else {
       navbar.classList.remove("scrolled");
+      logo.src = defaultLogo;
+      logoicon.src = defaultlogicon;
     }
   });
   document.addEventListener("click", (event) => {
@@ -41,85 +53,5 @@
         }
       });
     });
-  });
-  document.addEventListener("DOMContentLoaded", function() {
-    document.body.classList.add("scroll-locked");
-    const slider = document.querySelector(".immersive-slider");
-    const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".slider-indicators .dot");
-    let currentIndex = 0;
-    let isScrolling = false;
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    const updateSlide = (index) => {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
-      dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === index);
-      });
-    };
-    const lockScroll = (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-    };
-    if (isMobile) {
-      const autoSlideInterval = setInterval(() => {
-        if (currentIndex < slides.length - 1) {
-          currentIndex++;
-          updateSlide(currentIndex);
-        } else {
-          clearInterval(autoSlideInterval);
-          document.body.classList.remove("scroll-locked");
-        }
-      }, 3e3);
-      dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-          clearInterval(autoSlideInterval);
-          currentIndex = i;
-          updateSlide(currentIndex);
-        });
-      });
-      let touchStartX = 0;
-      slider.addEventListener("touchstart", (e) => {
-        touchStartX = e.touches[0].clientX;
-      });
-      slider.addEventListener("touchend", (e) => {
-        const touchEndX = e.changedTouches[0].clientX;
-        const deltaX = touchEndX - touchStartX;
-        if (deltaX > 50 && currentIndex > 0) {
-          clearInterval(autoSlideInterval);
-          currentIndex--;
-          updateSlide(currentIndex);
-        } else if (deltaX < -50 && currentIndex < slides.length - 1) {
-          clearInterval(autoSlideInterval);
-          currentIndex++;
-          updateSlide(currentIndex);
-        }
-      });
-    } else {
-      const onScroll = (event) => {
-        const delta = event.deltaY || event.detail || event.wheelDelta;
-        if (isScrolling) return;
-        if (delta > 0 && currentIndex < slides.length - 1) {
-          currentIndex++;
-        } else if (delta < 0 && currentIndex > 0) {
-          currentIndex--;
-        } else if (delta > 0 && currentIndex === slides.length - 1) {
-          document.body.classList.remove("scroll-locked");
-          document.removeEventListener("wheel", lockScroll, { passive: false });
-        }
-        updateSlide(currentIndex);
-        isScrolling = true;
-        setTimeout(() => {
-          isScrolling = false;
-        }, 800);
-      };
-      document.addEventListener("wheel", lockScroll, { passive: false });
-      document.addEventListener("wheel", onScroll, { passive: true });
-      setTimeout(() => {
-        document.removeEventListener("wheel", lockScroll, { passive: false });
-      }, slides.length * 1e3);
-    }
-    updateSlide(currentIndex);
   });
 })();

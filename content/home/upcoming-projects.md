@@ -1,5 +1,5 @@
 ---
-title: "Upcoming Project"
+title: "URBAN SQUARE APARTMENTS"
 description: "Urban Square Apartments exemplify modern design with biophilic appeal, functional layouts, and sustainable features, offering an elevated living experience."
 keywords: "Urban Square Apartment Project, Velar Infra Projects LLP, Biophilic Design, Sustainable Living, Residential Projects"
 layout: "home"
@@ -7,11 +7,13 @@ section: "upcoming"
 date: 2024-12-27T20:12:16+05:30
 draft: false
 images:
-  hero: "/images/KALAPATTI-3.jpg"
+  hero: "/images/urban-square-1.jpg"
   gallery:
-    - "/images/KALAPATTI-3.jpg"
-    - "/images/KALAPATTI-4.jpg"
-    - "/images/KALAPATTI-5.jpg"
+    - "/images/urban-square-2.jpg"
+    - "/images/urban-square-3.jpg"
+    - "/images/urban-square-4.jpg"
+    - "/images/urban-square-5.jpg"
+    - "/images/urban-square-6.jpg"
 icons:
   - name: "Biophilic Appeal"
     icon: "bi-flower2 text-success"

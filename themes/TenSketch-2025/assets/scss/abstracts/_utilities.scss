@@ -1,8 +1,37 @@
 @import '../abstracts/variables';
 
 .text-primary{
-    color:$voyage-blue;
+    color:$voyage-blue!important;
 }
 .py-c{
     padding-block: 5rem;
+}
+$robust-rust: #A74F2A;
+
+.text-secondary{
+    color: $robust-rust!important;
+}
+.fw-semibold{
+    font-weight: $fw-semibold;
+}
+hr{
+    &.bg-primary{
+        background-color: $voyage-blue!important;
+        border: 0;
+        height: 3px;
+        width: 50%;
+        margin: 1rem auto;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+}
+
+.wave-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
 }

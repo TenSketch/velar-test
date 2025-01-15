@@ -3,12 +3,16 @@ languageCode = 'en-us'
 title = 'Velar | Modular Interiors and Construction Innovations'
 theme = 'TenSketch-2025'
 [params]
-favicon = '/favicon1.png'
+logoicon = '/favicon1.png'
+logoicon_scrolled = '/favicon.png'
 description = 'Velar specializes in modular interiors, infrastructure solutions, and construction projects. From designing timeless interiors to redefining exteriors with research-driven practices, we deliver unmatched quality and value.'
 keywords = 'Velar Infra Projects LLP, interior designers, interior designers, modular interiors, infrastructure solutions, custom interiors, innovative construction, residential and corporate interiors, infrastructure development, exterior solutions, Construction company, builders, turnkey projects'
 author = 'Balachandiran - TenSketch'
-logo = '/images/VELAR-LOGO-h.png'
+logo_default = '/images/velar-logo-white.png'
+logo_scrolled = '/images/velar-logo-colored.png'
 og_image = '/ogimage.jpg'
+phone = '+919884693693'
+instagram = 'https://instagram.com/velar_infra'
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

@@ -3,7 +3,8 @@
 .navbar {
     transition: background-color 0.3s ease, padding 0.3s ease;
     // @include glassmorphism($white); // Uses default values
-background-color: $white;
+// background-color: $white;
+background-color: transparent;
     .navbar-brand {
         flex: 0 0 30%;
         img {
@@ -16,27 +17,32 @@ background-color: $white;
             width: 30px;
         }
     }
-    .navbar-collapse{
+    .nav-link{
+        color: $snow-white;
+        font-weight: 500;
+    }   
+    // .navbar-collapse{
 
-        .navbar-nav{
+    //     .navbar-nav{
 
-            .nav-item{
+    //         .nav-item{
 
-                .nav-link{
-                    @include text-primary;
-                }
-            }
-        }
-    }
+                
+    //         }
+    //     }
+    // }
 
     // Add styles for the scrolled state
     &.scrolled {
-        background-color: white;
-        padding-top: 10px; // Adjust as needed
+        background-color:$snow-white;
+        box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);        padding-top: 10px; // Adjust as needed
         padding-bottom: 10px; // Adjust as needed
 
         .navbar-brand img {
             width: 100px; // Adjust as needed
+        }
+        .nav-link{
+            @include text-primary;
         }
     }
 }
