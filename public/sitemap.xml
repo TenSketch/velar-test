@@ -2,50 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/footer/</loc>
+    <loc>//localhost:1313/footer/</loc>
     <lastmod>2025-01-10T17:02:05+05:30</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2025-01-10T17:02:05+05:30</lastmod>
   </url><url>
-    <loc>/terms-and-conditions/</loc>
+    <loc>//localhost:1313/terms-and-conditions/</loc>
     <lastmod>2024-12-31T17:58:14+05:30</lastmod>
   </url><url>
-    <loc>/home/gallery/</loc>
+    <loc>//localhost:1313/home/gallery/</loc>
     <lastmod>2024-12-30T15:37:10+05:30</lastmod>
   </url><url>
-    <loc>/home/</loc>
+    <loc>//localhost:1313/home/</loc>
     <lastmod>2024-12-30T15:37:10+05:30</lastmod>
   </url><url>
-    <loc>/home/hero/</loc>
+    <loc>//localhost:1313/home/hero/</loc>
     <lastmod>2024-12-27T20:12:17+05:30</lastmod>
   </url><url>
-    <loc>/home/upcoming-projects/</loc>
+    <loc>//localhost:1313/home/upcoming-projects/</loc>
     <lastmod>2024-12-27T20:12:16+05:30</lastmod>
   </url><url>
-    <loc>/home/projects-portfolio/</loc>
+    <loc>//localhost:1313/home/projects-portfolio/</loc>
     <lastmod>2024-12-27T20:11:16+05:30</lastmod>
   </url><url>
-    <loc>/home/testimonials/</loc>
+    <loc>//localhost:1313/home/testimonials/</loc>
     <lastmod>2024-12-25T00:13:10+05:30</lastmod>
   </url><url>
-    <loc>/home/about/</loc>
+    <loc>//localhost:1313/home/about/</loc>
     <lastmod>2024-12-25T00:11:37+05:30</lastmod>
   </url><url>
-    <loc>/home/usp/</loc>
+    <loc>//localhost:1313/home/usp/</loc>
     <lastmod>2024-12-25T00:11:37+05:30</lastmod>
   </url><url>
-    <loc>/thank-you/</loc>
+    <loc>//localhost:1313/thank-you/</loc>
     <lastmod>2024-12-15T15:59:23+05:30</lastmod>
   </url><url>
-    <loc>/contact-us/</loc>
+    <loc>//localhost:1313/contact-us/</loc>
     <lastmod>2024-12-03T16:01:41+05:30</lastmod>
   </url><url>
-    <loc>/about-us/</loc>
+    <loc>//localhost:1313/about-us/</loc>
     <lastmod>2024-12-03T16:01:28+05:30</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/home/cta/</loc>
+    <lastmod>2024-12-01T01:21:07+05:30</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/categories/</loc>
+  </url><url>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>

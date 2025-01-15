@@ -1,0 +1,64 @@
+<!-- vertical scroll slider -->
+<div class="immersive-slider" data-aos>
+  <div class="slide active">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="/videos/urban_square.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content translate-middle top-50 position-absolute text-center p-3">
+      <h1 class="title display-3">Welcome to Velar</h1>
+      <h5 class="subtitle my-3 fst-italic">Innovative Designs & Interiors</h5>
+      <a href="#services" class="btn btn-voyage-blue-outline">Explore More</a>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('/images/KALAPATTI-4.jpg');">
+    <div class="content translate-middle top-50 position-absolute text-center p-3">
+      <h1 class="title display-3">Your Vision, Our Expertise</h1>
+      <h5 class="subtitle my-3 fst-italic">Bringing Ideas to Life</h5>
+      <a href="#projects" class="btn btn-voyage-blue-outline">View Projects</a>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('/images/KALAPATTI-5.jpg');">
+    <div class="content translate-middle top-50 position-absolute text-center p-3">
+      <h1 class="title display-3">Building Dreams</h1>
+      <h5 class="subtitle my-3 fst-italic">Crafting Timeless Spaces</h5>
+      <a href="#contact" class="btn btn-voyage-blue-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="slider-indicators">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<!-- <video autoplay muted loop class="video-background">  
+    <source src="{{ .Params.background }}" type="video/mov">  
+    Your browser does not support the video tag.  
+  </video>   -->
+
+
+  <!-- section portfolio -->
+ {{ if eq $section "portfolio" }}
+ <section id="projects" class="projects py-c ">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-4 ">{{ .Title }}</h2>
+    </div>
+    <div class="row justify-content-center justify-content-md-between ">
+      {{ range .Params.projects }}
+      <div class="col-custom">
+        <div class="project-card ">
+          <img src="{{ .image }}" alt="{{ .title }}" class="card-img-top rounded">
+          <div class="card-body mt-3">
+            <h5 class="card-title ">{{ .title }}</h5>
+            <p class="">{{ .location }}</p>
+            <a href="{{ .link }}" class="btn btn-snow-white">View Gallery</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
