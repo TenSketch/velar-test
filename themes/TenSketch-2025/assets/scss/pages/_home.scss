@@ -81,13 +81,70 @@
 //     }
 // }
 
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+    z-index: 1;
+    /* Place it above the background but below the text */
+}
+
+.slide-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    animation: fadeUp 0.8s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.agent-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 
 .hero {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
     /* Prevents overflow */
-    
+
 
     /* Add a pseudo-element for the overlay */
     &::before {
@@ -186,6 +243,76 @@
     }
 }
 
+// overview
+.overview {
+    background-color: $snow-white;
+    min-height: 100vh;
+    // gradient bg
+    background-image: linear-gradient(90deg, lighten($voyage-blue, 50%), $snow-white);
+
+    .container {
+        width: 70%;
+        margin-left: auto;
+
+    }
+    .scroll-container {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+        align-items: center;
+        // position: absolute;
+        // left: 0;
+        // bottom: 0;
+        // right: 0;
+        width: 90%;
+        // margin-top: 50vh;
+        a{
+            display: block;
+            /* width: 80vw; */
+            flex: 0 0 85%;
+            width: 85%;
+            
+            &+a{
+                margin-left: 0.5rem;
+            }
+            img{
+                width: 90%;
+                height: 34vh;
+                /* width: 80vw; */
+                object-fit: cover;
+              
+            }
+        }
+        
+        
+    }
+
+    .vertical-title-bar {
+        position: sticky;
+        height: 50vh;
+        width: 50px;
+        background: $voyage-blue;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            // writing-mode: vertical-rl; /* Rotates text vertically */
+            // text-orientation: mixed; /* Ensures text orientation is correct */
+            color: $snow-white;
+            /* White text color */
+            padding: 10px;
+            // font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            // height: 100%; /* Adjust as needed */
+        }
+    }
+
+}
 
 //   upcoming
 #kalapatti-project {
@@ -236,7 +363,7 @@
 
 
 .about {
-    background-color: $snow-white; // Subtle background color
+    // background-color: $snow-white; // Subtle background color
 
     img {
         @include border-radius;

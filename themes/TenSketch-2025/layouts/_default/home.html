@@ -3,6 +3,58 @@
 {{ $section := .Params.section }}
 
 {{ if eq $section "hero" }}
+<!-- Include Swiper CSS -->
+
+<!-- Hero Section Slider -->
+<section class="hero-slider d-none">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image: url('/images/urban-square-2.jpg');" data-swiper-parallax="40%"></div>
+        <div class="slide-overlay"></div>
+
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white ">URBAN SQUARE APARTMENTS</h1>
+          <!-- <h4 class="fw-semibold">Premium bespoke apartments in Kalapatti, Coimbatore.</h4> -->
+          <!-- <div class="property-details">
+            <p>10.8 Grounds | 40 Units | Starting at ₹85 Lakhs</p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('/images/urban-square-1.jpg');" data-swiper-parallax="40%"></div>
+
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white">Premium bespoke apartments spread over 10.8 acres</h1>
+
+          <!-- <p>24, Ben Wood Street, San Jose, CA - 142</p> -->
+          <!-- <div class="property-details fw-semibold">
+          </div> -->
+          <!-- <a href="#" class="btn btn-primary">Download Brochure</a> -->
+
+        </div>
+      </div>
+      <!-- slide 3 -->
+       <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('/images/urban-square-3.jpg');" data-swiper-parallax="40%"></div>
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white">VELAR in collaboration with Warp Architects</h1>
+
+        </div>
+       </div>
+      
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
 
 <section class="hero d-flex align-items-center position-relative" >  
   
@@ -107,9 +159,6 @@
     </div>
   </div>
 </section>
-
-
-
  <section id="upcoming" class="py-c d-none">
   <div class="container">
     <!-- Section Title -->
@@ -178,14 +227,41 @@
   </div>
 </section>
 
+<section class="overview position-relative py-c my-5">
+  <div class="vertical-title-bar">
+    <h2>O<br>V<br>E<br>R<br>V<br>I<br>E<br>W</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="title mb-4 text-primary">Cozy homes at the heart of Coimbatore</h2>
+        <h5 class="subtitle mb-4 fst-italic">Experience the grand lunch on Jan 25, 2025</h5>
+        <p class="description mb-4">Urban Square Apartments exemplify modern design with biophilic appeal, functional layouts, and sustainable features, offering an elevated living experience.</p>
+        <h3 class="">Design Philosophy</h3>
+        <p class="text-muted">
+          {{ .Params.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid px-0">
+    <div class="scroll-container" data-aos="fade-up" data-aos-delay="200">
+      {{ range .Params.images.gallery }}
+        <a href="{{ . }}" data-fancybox="gallery" data-caption="{{ $.Title }} Image">
+          <img src="{{ . }}" alt="{{ $.Title }} Image" class="img-fluid rounded shadow-sm">
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
 {{ end }}
 
 
 
 
-
 {{ if eq $section "about" }}
-<section class="about py-c ">
+<section class="about py-c">
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <!-- Image Section -->

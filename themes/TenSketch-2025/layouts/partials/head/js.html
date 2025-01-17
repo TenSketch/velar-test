@@ -2,9 +2,32 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 800, // Animation duration in ms
+    duration: 1000, // Animation duration in ms
+    easing: 'ease-in-out', // Animation easing
+
   });
 </script>
+<!-- Include Swiper and AOS Scripts -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  // Initialize Swiper
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    effect: 'slide',
+    parallax: true,
+    speed: 600,
+    autoplay: {
+      delay: 5000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
 
 {{- with resources.Get "js/main.js" }}
