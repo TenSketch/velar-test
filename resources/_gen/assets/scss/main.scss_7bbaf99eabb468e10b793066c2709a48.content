@@ -467,7 +467,8 @@ hr.bg-primary {
     /* White text color */
     padding: 10px;
     font-weight: bold;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.3rem; }
 
 .project-section {
   background-image: linear-gradient(90deg, #b4caf2, #FEFEFA); }
