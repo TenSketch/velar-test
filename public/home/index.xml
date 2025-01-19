@@ -2,73 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Velar | Modular Interiors and Construction Innovations</title>
-    <link>//localhost:1313/home/</link>
+    <link>/home/</link>
     <description>Recent content in Homes on Velar | Modular Interiors and Construction Innovations</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jan 2025 06:40:00 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/home/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2025 16:40:00 +0530</lastBuildDate>
+    <atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Urban Square</title>
-      <link>//localhost:1313/home/hero/</link>
-      <pubDate>Sun, 19 Jan 2025 06:40:00 +0530</pubDate>
-      <guid>//localhost:1313/home/hero/</guid>
+      <link>/home/hero/</link>
+      <pubDate>Sun, 19 Jan 2025 16:40:00 +0530</pubDate>
+      <guid>/home/hero/</guid>
       <description>&lt;!-- Video by Tom Fisk: https://www.pexels.com/video/high-rise-buildings-in-indonesia-4984216/ --&gt;</description>
     </item>
     <item>
       <title>URBAN SQUARE APARTMENTS</title>
-      <link>//localhost:1313/home/upcoming-projects/</link>
-      <pubDate>Sun, 19 Jan 2025 05:40:00 +0530</pubDate>
-      <guid>//localhost:1313/home/upcoming-projects/</guid>
+      <link>/home/upcoming-projects/</link>
+      <pubDate>Sun, 19 Jan 2025 16:30:00 +0530</pubDate>
+      <guid>/home/upcoming-projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Sliders</title>
-      <link>//localhost:1313/home/slider/</link>
-      <pubDate>Sun, 19 Jan 2025 04:40:00 +0530</pubDate>
-      <guid>//localhost:1313/home/slider/</guid>
+      <link>/home/slider/</link>
+      <pubDate>Sun, 19 Jan 2025 16:25:00 +0530</pubDate>
+      <guid>/home/slider/</guid>
       <description>&lt;!-- Video by Tom Fisk: https://www.pexels.com/video/high-rise-buildings-in-indonesia-4984216/ --&gt;</description>
     </item>
     <item>
       <title>Overview</title>
-      <link>//localhost:1313/home/overview/</link>
-      <pubDate>Sun, 19 Jan 2025 03:40:00 +0530</pubDate>
-      <guid>//localhost:1313/home/overview/</guid>
+      <link>/home/overview/</link>
+      <pubDate>Sun, 19 Jan 2025 16:20:00 +0530</pubDate>
+      <guid>/home/overview/</guid>
       <description></description>
     </item>
     <item>
-      <title>Location</title>
-      <link>//localhost:1313/home/location/</link>
-      <pubDate>Sun, 19 Jan 2025 02:40:00 +0530</pubDate>
-      <guid>//localhost:1313/home/location/</guid>
+      <title>Features</title>
+      <link>/home/features/</link>
+      <pubDate>Sun, 19 Jan 2025 12:40:00 +0530</pubDate>
+      <guid>/home/features/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Specifications</title>
+      <link>/home/specifications/</link>
+      <pubDate>Sun, 19 Jan 2025 12:40:00 +0530</pubDate>
+      <guid>/home/specifications/</guid>
       <description></description>
     </item>
     <item>
       <title>Amenities</title>
-      <link>//localhost:1313/home/amenities/</link>
-      <pubDate>Sun, 19 Jan 2025 01:40:00 +0530</pubDate>
-      <guid>//localhost:1313/home/amenities/</guid>
+      <link>/home/amenities/</link>
+      <pubDate>Sun, 19 Jan 2025 12:35:00 +0530</pubDate>
+      <guid>/home/amenities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Location</title>
+      <link>/home/location/</link>
+      <pubDate>Sun, 19 Jan 2025 12:30:00 +0530</pubDate>
+      <guid>/home/location/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>/home/about/</link>
+      <pubDate>Sun, 19 Jan 2025 11:40:00 +0530</pubDate>
+      <guid>/home/about/</guid>
+      <description>&lt;h4 id=&#34;mission&#34;&gt;Mission:&lt;/h4&gt;&#xA;&lt;p&gt;To &lt;strong&gt;BUILD&lt;/strong&gt; transformative spaces that merge functionality, innovation, and sustainability, creating environments that inspire and elevate communities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Our USP</title>
+      <link>/home/usp/</link>
+      <pubDate>Sun, 19 Jan 2025 10:40:00 +0530</pubDate>
+      <guid>/home/usp/</guid>
       <description></description>
     </item>
     <item>
       <title>Gallery</title>
-      <link>//localhost:1313/home/gallery/</link>
+      <link>/home/gallery/</link>
       <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
-      <guid>//localhost:1313/home/gallery/</guid>
+      <guid>/home/gallery/</guid>
       <description></description>
     </item>
     <item>
       <title>Project Portfolio</title>
-      <link>//localhost:1313/home/projects-portfolio/</link>
+      <link>/home/projects-portfolio/</link>
       <pubDate>Fri, 27 Dec 2024 20:11:16 +0530</pubDate>
-      <guid>//localhost:1313/home/projects-portfolio/</guid>
+      <guid>/home/projects-portfolio/</guid>
       <description></description>
     </item>
     <item>
       <title>Testimonials</title>
-      <link>//localhost:1313/home/testimonials/</link>
+      <link>/home/testimonials/</link>
       <pubDate>Wed, 25 Dec 2024 00:13:10 +0530</pubDate>
-      <guid>//localhost:1313/home/testimonials/</guid>
+      <guid>/home/testimonials/</guid>
       <description></description>
     </item>
   </channel>

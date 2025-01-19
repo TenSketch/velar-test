@@ -331,7 +331,7 @@ hr.bg-primary {
 
 .swiper-slide {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   position: relative; }
 
@@ -358,11 +358,22 @@ hr.bg-primary {
 
 .slide-content {
   text-align: center;
-  color: white;
-  padding: 20px;
+  color: #FEFEFA;
+  padding: 0.5rem 1rem;
   animation: fadeUp 0.8s ease-in-out;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  background: 4px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5px;
+  letter-spacing: 8px; }
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FEFEFA !important; }
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 25px; }
 
 .agent-img {
   width: 50px;
@@ -713,7 +724,7 @@ hr.bg-primary {
   position: relative;
   transition: all 0.3s ease; }
   .card:hover {
-    box-shadow: 0 0 20px #BCC4B2, 0 0 40px #BCC4B2;
+    box-shadow: 0 0 10px #BCC4B2, 0 0 20px #BCC4B2;
     transform: translateY(-5px); }
   .card .icon {
     font-size: 25px;
@@ -730,19 +741,18 @@ hr.bg-primary {
 .team-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center; }
 
 .team-member {
   border: 2px solid #BCC4B2;
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
   text-align: center;
   background-color: transparent;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  overflow: hidden; }
   .team-member:hover {
-    box-shadow: 0 0 20px #BCC4B2, 0 0 40px #BCC4B2; }
+    box-shadow: 0 0 10px #BCC4B2, 0 0 20px #BCC4B2; }
   .team-member h3, .team-member p {
     color: #BCC4B2; }
 

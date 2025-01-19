@@ -25,28 +25,28 @@ sections:
       - "Fixing Edge Band using Edge Bander Machines."
       - "Drilling/Routing of panels using CNC Router Machines."
 
-  - title: "Our USP"
-    cards:
-      - title: "Quality"
-        icon: "fas fa-tools"
-        description: >
-          Durable materials and expert craftsmanship that stand the test of time.
-      - title: "Customization"
-        icon: "fas fa-pencil-ruler"
-        description: >
-          Tailored designs that reflect your unique personality and lifestyle.
-      - title: "Comfort"
-        icon: "fas fa-couch"
-        description: >
-          Space-efficient layouts without compromising on comfort.
-      - title: "Timeless Charm"
-        icon: "fas fa-clock"
-        description: >
-          Blends of classic design elements with modern amenities for a timeless appeal.
-      - title: "Unmatched Value"
-        icon: "fas fa-handshake"
-        description: >
-          Competitive pricing and a transparent process.
+  # - title: "Our USP"
+  #   cards:
+  #     - title: "Quality"
+  #       icon: "fas fa-tools"
+  #       description: >
+  #         Durable materials and expert craftsmanship that stand the test of time.
+  #     - title: "Customization"
+  #       icon: "fas fa-pencil-ruler"
+  #       description: >
+  #         Tailored designs that reflect your unique personality and lifestyle.
+  #     - title: "Comfort"
+  #       icon: "fas fa-couch"
+  #       description: >
+  #         Space-efficient layouts without compromising on comfort.
+  #     - title: "Timeless Charm"
+  #       icon: "fas fa-clock"
+  #       description: >
+  #         Blends of classic design elements with modern amenities for a timeless appeal.
+  #     - title: "Unmatched Value"
+  #       icon: "fas fa-handshake"
+  #       description: >
+  #         Competitive pricing and a transparent process.
 
   - title: "Meet Our Team"
     members:

@@ -94,7 +94,7 @@
 
 .swiper-slide {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     position: relative;
 }
@@ -124,11 +124,22 @@
 
 .slide-content {
     text-align: center;
-    color: white;
-    padding: 20px;
+    color: $snow-white;
+    padding: 0.5rem 1rem;
     animation: fadeUp 0.8s ease-in-out;
     position: relative;
     z-index: 2;
+    @include glassmorphism(4px);
+    letter-spacing: 8px;
+    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: $snow-white!important;
+    // width: 30px;
+    // aspect-ratio: 1;
+    &::after{
+        font-size: 25px;
+    }
 }
 
 .agent-img {

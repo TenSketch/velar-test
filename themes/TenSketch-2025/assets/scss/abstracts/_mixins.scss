@@ -92,7 +92,7 @@ $breakpoint-large-desktop: 1440px;
     background-color: $bg-color;
 }
 
-@mixin glassmorphism($background: rgba(255, 255, 255, 0.4), $blur: 5px, $border-radius: 10px) {
+@mixin glassmorphism($background: rgba(255, 255, 255, 0.4), $blur: 5px, $border-radius: 5px) {
     background: $background;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur($blur);

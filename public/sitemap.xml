@@ -2,56 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/home/</loc>
+    <loc>/home/</loc>
+    <lastmod>2025-01-19T16:40:00+05:30</lastmod>
+  </url><url>
+    <loc>/home/hero/</loc>
+    <lastmod>2025-01-19T16:40:00+05:30</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2025-01-19T16:40:00+05:30</lastmod>
+  </url><url>
+    <loc>/home/upcoming-projects/</loc>
+    <lastmod>2025-01-19T16:30:00+05:30</lastmod>
+  </url><url>
+    <loc>/home/slider/</loc>
+    <lastmod>2025-01-19T16:25:00+05:30</lastmod>
+  </url><url>
+    <loc>/home/overview/</loc>
+    <lastmod>2025-01-19T16:20:00+05:30</lastmod>
+  </url><url>
+    <loc>/home/features/</loc>
     <lastmod>2025-01-19T12:40:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>/home/specifications/</loc>
     <lastmod>2025-01-19T12:40:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/hero/</loc>
-    <lastmod>2025-01-19T06:40:00+05:30</lastmod>
+    <loc>/home/amenities/</loc>
+    <lastmod>2025-01-19T12:35:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/upcoming-projects/</loc>
-    <lastmod>2025-01-19T05:40:00+05:30</lastmod>
+    <loc>/home/location/</loc>
+    <lastmod>2025-01-19T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/slider/</loc>
-    <lastmod>2025-01-19T04:40:00+05:30</lastmod>
+    <loc>/home/about/</loc>
+    <lastmod>2025-01-19T11:40:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/overview/</loc>
-    <lastmod>2025-01-19T03:40:00+05:30</lastmod>
+    <loc>/home/usp/</loc>
+    <lastmod>2025-01-19T10:40:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/location/</loc>
-    <lastmod>2025-01-19T02:40:00+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/home/amenities/</loc>
-    <lastmod>2025-01-19T01:40:00+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/footer/</loc>
+    <loc>/footer/</loc>
     <lastmod>2025-01-10T17:02:05+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/terms-and-conditions/</loc>
-    <lastmod>2024-12-31T17:58:14+05:30</lastmod>
-  </url><url>
-    <loc>//localhost:1313/home/gallery/</loc>
+    <loc>/home/gallery/</loc>
     <lastmod>2024-12-30T15:37:10+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/projects-portfolio/</loc>
+    <loc>/home/projects-portfolio/</loc>
     <lastmod>2024-12-27T20:11:16+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/home/testimonials/</loc>
+    <loc>/home/testimonials/</loc>
     <lastmod>2024-12-25T00:13:10+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/thank-you/</loc>
+    <loc>/thank-you/</loc>
     <lastmod>2024-12-15T15:59:23+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/contact-us/</loc>
+    <loc>/contact-us/</loc>
     <lastmod>2024-12-03T16:01:41+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/about-us/</loc>
+    <loc>/about-us/</loc>
     <lastmod>2024-12-03T16:01:28+05:30</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>

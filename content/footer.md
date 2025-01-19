@@ -7,9 +7,9 @@ quick_links:
   - name: "Home"
     url: "/"
   - name: "About Us"
-    url: "/about"
-  - name: "Projects"
-    url: "/projects"
+    url: "/about-us"
+  # - name: "Projects"
+  #   url: "/projects"
   - name: "Contact Us"
     url: "/contact"
 contact:
