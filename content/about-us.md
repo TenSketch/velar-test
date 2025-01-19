@@ -3,85 +3,62 @@ title: 'About Us'
 date: 2024-12-03T16:01:28+05:30
 layout: 'single'
 type: 'about-us'
-draft: false
-patron:
-  name: "Shri K. Anantha Krishnan"
-  image: "/images/Anantha_Krishnan.jpg"
-  description: "A man of principle with broad-mindedness, known for his humility, simplicity, and dedication to sports."
-  role: "Vigilence Officer - Income Tax Department"
-  # role: "Anti-Corruption Officer, Central Government"
-  passion: "Supporting rural children in athletics, hockey, and tennis." 
-  achievements: "He guided more than 13,000 chidren in the field of Hockey and Tennis."
-  # achievements: "Mentored 444 children over 20 years in various sports."
-  values: "Followed the path of Anti-Corruption"
-  awards: "A vast collection of awards and certificates."
-  beliefs: 
-    - "Sports means patriotism."
-    - "Inspired by Swami Vivekananda."
-    - "Father as role model in sports."
-  foundation:
-    name: "AK Foundation"
-    reg: "Reg 945/2010"
-    established: "In his honor, to celebrate his meticulous approach and dedication."
-founder:
-  name: "Smt. Dr. Geetha Shreeneevasakan D/O M. Masilamani"
-  image: "/images/Annadhanam-Geetha-Mam-2.jpg"
-  description: "A leader with a transparent and disciplined life philosophy, dedicated to social service and integrity."
-  education: 
-    - "St. Antony’s Anglo Indian High School"
-    - "Presidency Girls Higher Secondary School"
-    - "Stella Maris College"
-    - "Madras School of Social Work"
-    - "Doctorate from Dravidian University"
-    - "PhD from Madras University"
-  expertise: 
-    - "Human Relations"
-    - "Social Development"
-    - "Personnel Management"
-    - "Resettlement and Rehabilitation"
-    - "United Nations and Child Rights"
-  experience: 
-    - "Chennai Port Trust"
-    - "Murugappa Group"
-    - "Tamil Nadu Road Sector Project (World Bank)"
-    - "Indian Council for Child Welfare"
-    - "M.S. Swaminathan Research Foundation"
-    - "J.K Foundation, Chennai"
-  positions:
-    - "District Advisory Board Member under Dowry Prohibition Act"
-    - "President of AK Foundation - Reg 945/2010"
-    - "Senior Consultant in Social Development"
-    - "National Women’s Wing Leader, Human Rights Protection Mission"
-    - "District Chief Commissioner of Bharat Scouts & Guides"
-# core_members:
-#   - "Shri Perumal Ramasamy"
-#   - "Shri N. Elango"
-#   - "Shri Capt. S. Thyagarajan"
-#   - "Shri M. Mahalingam"
-#   - "Shri S. Karthick Manish"
-#   - "Shri Loheeth Meiyappan"
-#   - "Shri Pazhaniappan"
-#   - "Selvi Harni Meiyappan"
-#   - "Smt Kamatchi Jayakrishnan"
-#   - "Smt Angayarkanni"
-#   - "Smt Shreevidhya"
-#   - "Smt Bavithra Thirumurgan"
-#   - "Smt Vijaya George"
-#   - "Smt Vijaya Nirmala Shivakumar"
-#   - "Smt Latha Vijayakumar"
-#   - "Smt Pushpalatha"
-#   - "Selvi Nalini"
-#   - "Smt Rohini (Ex MLA)"
-#   - "Shri Dinesh"
-#   - "Shri Senthil"
-#   - "Shri S. Karthikeyan"
-#   - "Shri Vimal"
-#   - "Shri Prem Joki"
-#   - "Shri Moses"
-#   - "Shri Gopathy"
-#   - "Shri Magesh"
-#   - "Shri Saravanan"
-#   - "Shri Giriraj"
-#   - "Shri Sampath"
-#   - "Shri Yogeesh"
+sections:
+  - title: "About Us"
+    content: >
+      VELAR INFRA PROJECTS LLP specializes in manufacturing all types of modular interiors, including wardrobes, modular kitchens, office workstations, and home furniture. 
+
+      A wholly-owned unit of KPM Constructions, with over three decades of expertise in construction and interiors across Chennai, Bangalore, and Hyderabad, Velar Infra is the product of 40 years of experience. Our mission is to make homes and construction dreams a reality.
+
+      With vast experience in home interiors, we provide end-to-end solutions from conceptualization and design to manufacturing and installation, all managed by our expert professionals.
+
+      Our state-of-the-art manufacturing facility is located in Thirumazhisai, Chennai.
+
+  - title: "Factory Infrastructure"
+    content: >
+      Our advanced manufacturing facility is equipped to handle over 100 engineered wooden panels (Plywood, MDF, HDF) daily, offering a variety of finishing options, including laminate, acrylic, PU, foil, and veneers.
+
+  - title: "Manufacturing Process"
+    steps:
+      - "Laminate pasting using Hot Press / Cold Press Machines."
+      - "Cutting using Beam Saw Machines."
+      - "Fixing Edge Band using Edge Bander Machines."
+      - "Drilling/Routing of panels using CNC Router Machines."
+
+  - title: "Our USP"
+    cards:
+      - title: "Quality"
+        icon: "fas fa-tools"
+        description: >
+          Durable materials and expert craftsmanship that stand the test of time.
+      - title: "Customization"
+        icon: "fas fa-pencil-ruler"
+        description: >
+          Tailored designs that reflect your unique personality and lifestyle.
+      - title: "Comfort"
+        icon: "fas fa-couch"
+        description: >
+          Space-efficient layouts without compromising on comfort.
+      - title: "Timeless Charm"
+        icon: "fas fa-clock"
+        description: >
+          Blends of classic design elements with modern amenities for a timeless appeal.
+      - title: "Unmatched Value"
+        icon: "fas fa-handshake"
+        description: >
+          Competitive pricing and a transparent process.
+
+  - title: "Meet Our Team"
+    members:
+      - name: "Mr. Shanmugavel"
+        role: "Founder"
+        image: "/images/Shanmugavel.jpg"
+        description: >
+          A renowned architect in Chennai and an alumnus of the School of Architecture and Planning, Anna University. Passionate about architecture, civil work, interiors, and turnkey projects for residences, corporate offices, and restaurants.
+      - name: "Mr. Shiva"
+        role: "Partner"
+        image: "/images/Shiva.jpg"
+        description: >
+          A second-generation entrepreneur with a master’s degree in Industrial Engineering from Arizona State University, USA. Brings entrepreneurial expertise and leadership skills to add immense value to the company.
+
 ---

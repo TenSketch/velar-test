@@ -6,7 +6,7 @@ brief: "Velar Infra Projects LLP, a leader in construction and modular interior 
 image: "/images/about.jpg"
 layout: "home"
 section: "about"
-date: 2024-12-25T00:11:37+05:30
+date: 2025-01-19T11:40:00+05:30
 draft: false
 
 ---

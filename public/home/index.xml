@@ -6,27 +6,55 @@
     <description>Recent content in Homes on Velar | Modular Interiors and Construction Innovations</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Dec 2024 15:37:10 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2025 06:40:00 +0530</lastBuildDate>
     <atom:link href="//localhost:1313/home/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Gallery</title>
-      <link>//localhost:1313/home/gallery/</link>
-      <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
-      <guid>//localhost:1313/home/gallery/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Urban Square</title>
       <link>//localhost:1313/home/hero/</link>
-      <pubDate>Fri, 27 Dec 2024 20:12:17 +0530</pubDate>
+      <pubDate>Sun, 19 Jan 2025 06:40:00 +0530</pubDate>
       <guid>//localhost:1313/home/hero/</guid>
       <description>&lt;!-- Video by Tom Fisk: https://www.pexels.com/video/high-rise-buildings-in-indonesia-4984216/ --&gt;</description>
     </item>
     <item>
       <title>URBAN SQUARE APARTMENTS</title>
       <link>//localhost:1313/home/upcoming-projects/</link>
-      <pubDate>Fri, 27 Dec 2024 20:12:16 +0530</pubDate>
+      <pubDate>Sun, 19 Jan 2025 05:40:00 +0530</pubDate>
       <guid>//localhost:1313/home/upcoming-projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sliders</title>
+      <link>//localhost:1313/home/slider/</link>
+      <pubDate>Sun, 19 Jan 2025 04:40:00 +0530</pubDate>
+      <guid>//localhost:1313/home/slider/</guid>
+      <description>&lt;!-- Video by Tom Fisk: https://www.pexels.com/video/high-rise-buildings-in-indonesia-4984216/ --&gt;</description>
+    </item>
+    <item>
+      <title>Overview</title>
+      <link>//localhost:1313/home/overview/</link>
+      <pubDate>Sun, 19 Jan 2025 03:40:00 +0530</pubDate>
+      <guid>//localhost:1313/home/overview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Location</title>
+      <link>//localhost:1313/home/location/</link>
+      <pubDate>Sun, 19 Jan 2025 02:40:00 +0530</pubDate>
+      <guid>//localhost:1313/home/location/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Amenities</title>
+      <link>//localhost:1313/home/amenities/</link>
+      <pubDate>Sun, 19 Jan 2025 01:40:00 +0530</pubDate>
+      <guid>//localhost:1313/home/amenities/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gallery</title>
+      <link>//localhost:1313/home/gallery/</link>
+      <pubDate>Mon, 30 Dec 2024 15:37:10 +0530</pubDate>
+      <guid>//localhost:1313/home/gallery/</guid>
       <description></description>
     </item>
     <item>
@@ -41,27 +69,6 @@
       <link>//localhost:1313/home/testimonials/</link>
       <pubDate>Wed, 25 Dec 2024 00:13:10 +0530</pubDate>
       <guid>//localhost:1313/home/testimonials/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About Us</title>
-      <link>//localhost:1313/home/about/</link>
-      <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
-      <guid>//localhost:1313/home/about/</guid>
-      <description>&lt;h4 id=&#34;mission&#34;&gt;Mission:&lt;/h4&gt;&#xA;&lt;p&gt;To &lt;strong&gt;BUILD&lt;/strong&gt; transformative spaces that merge functionality, innovation, and sustainability, creating environments that inspire and elevate communities.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Our USP</title>
-      <link>//localhost:1313/home/usp/</link>
-      <pubDate>Wed, 25 Dec 2024 00:11:37 +0530</pubDate>
-      <guid>//localhost:1313/home/usp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Be a Part of the Change</title>
-      <link>//localhost:1313/home/cta/</link>
-      <pubDate>Sun, 01 Dec 2024 01:21:07 +0530</pubDate>
-      <guid>//localhost:1313/home/cta/</guid>
       <description></description>
     </item>
   </channel>

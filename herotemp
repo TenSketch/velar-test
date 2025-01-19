@@ -29,3 +29,124 @@
 
    
 }
+
+
+
+<section class="hero-slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image: url('/images/urban-square-2.jpg');" data-swiper-parallax="40%"></div>
+        <div class="slide-overlay"></div>
+
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white ">URBAN SQUARE APARTMENTS</h1>
+          <!-- <h4 class="fw-semibold">Premium bespoke apartments in Kalapatti, Coimbatore.</h4> -->
+          <!-- <div class="property-details">
+            <p>10.8 Grounds | 40 Units | Starting at ₹85 Lakhs</p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('/images/urban-square-1.jpg');" data-swiper-parallax="40%"></div>
+
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white">Premium bespoke apartments spread over 10.8 acres</h1>
+
+          <!-- <p>24, Ben Wood Street, San Jose, CA - 142</p> -->
+          <!-- <div class="property-details fw-semibold">
+          </div> -->
+          <!-- <a href="#" class="btn btn-primary">Download Brochure</a> -->
+
+        </div>
+      </div>
+      <!-- slide 3 -->
+       <div class="swiper-slide">
+        <div class="slide-overlay"></div>
+        <div class="slide-bg" style="background-image: url('/images/urban-square-3.jpg');" data-swiper-parallax="40%"></div>
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white">VELAR in collaboration with Warp Architects</h1>
+
+        </div>
+       </div>
+      
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+<section id="upcoming" class="py-c d-none">
+<div class="container">
+  <!-- Section Title -->
+  <div class="text-center mb-5">
+    <h2 class="display-6 ">{{ .Title }}</h2>
+    <p class="lead">{{ .Params.description }}</p>
+  </div>
+
+  <!-- Hero Image -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <img src="{{ .Params.images.hero }}" alt="{{ .Title }}" class="img-fluid rounded">
+    </div>
+  </div>
+
+  <!-- Project Brief -->
+  <div class="row mb-5">
+    <div class="col-lg-6 mb-4">
+      <h3 class="">Design Philosophy</h3>
+      <p class="text-muted">
+        {{ .Params.description }}
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <ul class="list-unstyled">
+        {{ range .Params.icons }}
+        <li class="mb-3">
+          <i class="{{ .icon }} me-2"></i><h6 class="d-inline">{{ .name }}:</h6> {{ .description }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Features Grid -->
+  <div class="row text-center mb-5">
+    <h3 class=" mb-4">What Makes Urban Square Apartments Unique?</h3>
+    {{ range .Params.features }}
+    <div class="col-md-4 mb-3">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <i class="{{ .icon }} fs-1 mb-3"></i>
+          <h5 class="card-title">{{ .name }}</h5>
+          <p class="card-text">{{ .description }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="row mb-5">
+    <h3 class=" text-center mb-4">Explore the Beauty of Urban Square Apartments</h3>
+    {{ range .Params.images.gallery }}
+    <div class="col-md-4 mb-3">
+      <img src="{{ . }}" alt="{{ $.Title }} Image" class="img-fluid rounded shadow-sm">
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- Call to Action -->
+  <div class="text-center">
+    <a href="{{ .Params.cta.read_more_link }}" class="btn btn-voyage-blue  me-3">Read More</a>
+    <a href="{{ .Params.cta.contact_link }}" class="btn btn-voyage-blue-outline">Schedule a Visit</a>
+  </div>
+</div>
+</section>

@@ -1,73 +1,59 @@
 {{ define "main" }}
-<main class="py-5">
-  <section class="about-section py-5">
-    <div class="container">
-      <h1 class="text-center mb-4">{{ .Title }}</h1>
-      <div class="row mb-5">
-        <!-- About the Patron -->
-        <div class="col-md-6">
-          <div class="card shadow border-0">
-            <img src="{{ .Params.patron.image }}" class="card-img-top" alt="{{.Name}}">
-            <div class="card-body">
-              <h3 class="card-title">{{ .Params.patron.name }}</h3>
-              <p>{{ .Params.patron.description }}</p>
-              <ul>
-                <li><strong>Role:</strong> {{ .Params.patron.role }}</li>
-                <li><strong>Passion:</strong> {{ .Params.patron.passion }}</li>
-                <li><strong>Achievements:</strong> {{ .Params.patron.achievements }}</li>
-                <li><strong>Awards:</strong> {{ .Params.patron.awards }}</li>
-              </ul>
-              <p><strong>Beliefs:</strong></p>
-              <ul>
-                {{ range .Params.patron.beliefs }}
-                <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- About the Founder -->
-        <div class="col-md-6 mt-4 mt-md-0">
-          <div class="card shadow border-0">
-            <img src="{{ .Params.founder.image }}" class="card-img-top" alt="{{.Name}}">
-            <div class="card-body">
-              <h3 class="card-title">{{ .Params.founder.name }}</h3>
-              <p>{{ .Params.founder.description }}</p>
-              <p><strong>Education:</strong></p>
-              <ul>
-                {{ range .Params.founder.education }}
-                <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-              <p><strong>Expertise:</strong></p>
-              <ul>
-                {{ range .Params.founder.expertise }}
-                <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-              <p><strong>Experience:</strong></p>
-              <ul>
-                {{ range .Params.founder.experience }}
-                <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Core Members -->
-      <!-- <div class="row">
-        <div class="col-12">
-          <h2 class="text-center">Core Executive Members</h2>
-          <ul class="list-group">
-            {{ range .Params.core_members }}
-            <li class="list-group-item">{{ . }}</li>
-            {{ end }}
-          </ul>
-        </div>
-      </div> -->
+<main class="">
+  <section class="roof-top d-flex justify-content-center align-items-center">
+    <div class="container text-center">
+    <h2 class="display-3 text-white">About Velar</h2>
+      
     </div>
   </section>
+  <div class="about-us">
+    <!-- <div class="roof-shape" data-aos="fade-down">
+      <img src="/path/to/roof-image.png" alt="Roof Shape" />
+    </div> -->
+    {{ range .Params.sections }}
+    <section class="section" data-aos="fade-up" data-aos-delay="{{ .Params.delay }}">
+      <h2>{{ .title }}</h2>
+      {{ if .content }}
+        <p>{{ .content }}</p>
+      {{ end }}
+      {{ if .steps }}
+      <ul class="list-unstyled">
+        {{ range .steps }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      {{ if .cards }}
+      <div class="card-container gap-3 gap-md-0">
+        {{ range .cards }}
+        <div class="card col-md-3 " data-aos="flip-left" data-aos-delay="{{ .Params.delay }}">
+          <div class="icon">
+            <i class="{{ .icon }}"></i>
+          </div>
+          <div class="card-content">
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ if .members }}
+      <div class="team-container">
+        {{ range .members }}
+        <div class="team-member" data-aos="zoom-in" data-aos-delay="{{ .Params.delay }}">
+          <img src="{{ .image }}" alt="{{ .name }}" />
+          <h3 class="mt-3">{{ .name }}</h3>
+          <p><strong>{{ .role }}</strong></p>
+          <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ end }}
+  </div>
+  
   
 
 </main>

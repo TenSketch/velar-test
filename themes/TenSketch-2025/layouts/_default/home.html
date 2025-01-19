@@ -3,60 +3,7 @@
 {{ $section := .Params.section }}
 
 {{ if eq $section "hero" }}
-<!-- Include Swiper CSS -->
-
-<!-- Hero Section Slider -->
-<section class="hero-slider d-none">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <div class="slide-bg" style="background-image: url('/images/urban-square-2.jpg');" data-swiper-parallax="40%"></div>
-        <div class="slide-overlay"></div>
-
-        <div class="slide-content" data-aos="fade-up">
-          <h1 class="display-4 text-white ">URBAN SQUARE APARTMENTS</h1>
-          <!-- <h4 class="fw-semibold">Premium bespoke apartments in Kalapatti, Coimbatore.</h4> -->
-          <!-- <div class="property-details">
-            <p>10.8 Grounds | 40 Units | Starting at ₹85 Lakhs</p>
-          </div> -->
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <div class="slide-overlay"></div>
-        <div class="slide-bg" style="background-image: url('/images/urban-square-1.jpg');" data-swiper-parallax="40%"></div>
-
-        <div class="slide-content" data-aos="fade-up">
-          <h1 class="display-4 text-white">Premium bespoke apartments spread over 10.8 acres</h1>
-
-          <!-- <p>24, Ben Wood Street, San Jose, CA - 142</p> -->
-          <!-- <div class="property-details fw-semibold">
-          </div> -->
-          <!-- <a href="#" class="btn btn-primary">Download Brochure</a> -->
-
-        </div>
-      </div>
-      <!-- slide 3 -->
-       <div class="swiper-slide">
-        <div class="slide-overlay"></div>
-        <div class="slide-bg" style="background-image: url('/images/urban-square-3.jpg');" data-swiper-parallax="40%"></div>
-        <div class="slide-content" data-aos="fade-up">
-          <h1 class="display-4 text-white">VELAR in collaboration with Warp Architects</h1>
-
-        </div>
-       </div>
-      
-    </div>
-
-    <!-- Navigation Buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-</section>
-
-<section class="hero d-flex align-items-center position-relative" >  
+<section class="hero d-flex align-items-center position-relative">
   
   <video autoplay muted loop class="video-background">  
     <source src="{{ .Params.background }}" type="video/mp4">  
@@ -81,11 +28,8 @@
 </section>
 {{ end }}
 
-
-<!-- section "upcoming" -->
- {{ if eq $section "upcoming" }}
-
- <section class="latest pt-5 d-flex align-items-center position-relative" id="latest" data-aos="fade-up">
+{{ if eq $section "upcoming" }}
+ <section class="latest py-c d-flex align-items-center position-relative" id="latest" data-aos="fade-up">
   <div class="wave-bg">
     <img src="/images/wave-bg.svg" alt="Wave Background" class="img-fluid">
   </div>
@@ -159,106 +103,291 @@
     </div>
   </div>
 </section>
- <section id="upcoming" class="py-c d-none">
-  <div class="container">
-    <!-- Section Title -->
-    <div class="text-center mb-5">
-      <h2 class="display-6 ">{{ .Title }}</h2>
-      <p class="lead">{{ .Params.description }}</p>
-    </div>
+{{ end }}
 
-    <!-- Hero Image -->
-    <div class="row mb-5">
-      <div class="col-12">
-        <img src="{{ .Params.images.hero }}" alt="{{ .Title }}" class="img-fluid rounded">
-      </div>
-    </div>
-
-    <!-- Project Brief -->
-    <div class="row mb-5">
-      <div class="col-lg-6 mb-4">
-        <h3 class="">Design Philosophy</h3>
-        <p class="text-muted">
-          {{ .Params.description }}
-        </p>
-      </div>
-      <div class="col-lg-6">
-        <ul class="list-unstyled">
-          {{ range .Params.icons }}
-          <li class="mb-3">
-            <i class="{{ .icon }} me-2"></i><h6 class="d-inline">{{ .name }}:</h6> {{ .description }}
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-
-    <!-- Features Grid -->
-    <div class="row text-center mb-5">
-      <h3 class=" mb-4">What Makes Urban Square Apartments Unique?</h3>
-      {{ range .Params.features }}
-      <div class="col-md-4 mb-3">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <i class="{{ .icon }} fs-1 mb-3"></i>
-            <h5 class="card-title">{{ .name }}</h5>
-            <p class="card-text">{{ .description }}</p>
-          </div>
+{{ if eq $section "slider" }}
+<section class="slider">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {{ range .Params.slider }}
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image: url('{{ .image }}');" ></div>
+        <div class="slide-overlay"></div>
+    
+        <div class="slide-content" data-aos="fade-up">
+          <h1 class="display-4 text-white">{{ .title }}</h1>
         </div>
       </div>
       {{ end }}
     </div>
-
-    <!-- Gallery Section -->
-    <div class="row mb-5">
-      <h3 class=" text-center mb-4">Explore the Beauty of Urban Square Apartments</h3>
-      {{ range .Params.images.gallery }}
-      <div class="col-md-4 mb-3">
-        <img src="{{ . }}" alt="{{ $.Title }} Image" class="img-fluid rounded shadow-sm">
-      </div>
-      {{ end }}
-    </div>
-
-    <!-- Call to Action -->
-    <div class="text-center">
-      <a href="{{ .Params.cta.read_more_link }}" class="btn btn-voyage-blue  me-3">Read More</a>
-      <a href="{{ .Params.cta.contact_link }}" class="btn btn-voyage-blue-outline">Schedule a Visit</a>
-    </div>
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
+{{ end }}
 
-<section class="overview position-relative py-c my-5">
+{{ if eq $section "overview" }}
+<section id="overview" class="project-section position-relative py-5 my-5">
   <div class="vertical-title-bar">
     <h2>O<br>V<br>E<br>R<br>V<br>I<br>E<br>W</h2>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-7">
         <h2 class="title mb-4 text-primary">Cozy homes at the heart of Coimbatore</h2>
         <h5 class="subtitle mb-4 fst-italic">Experience the grand lunch on Jan 25, 2025</h5>
         <p class="description mb-4">Urban Square Apartments exemplify modern design with biophilic appeal, functional layouts, and sustainable features, offering an elevated living experience.</p>
+        
+      </div>
+      <div class="col-md-5">
         <h3 class="">Design Philosophy</h3>
         <p class="text-muted">
           {{ .Params.description }}
         </p>
       </div>
-    </div>
-  </div>
-  <div class="container-fluid px-0">
-    <div class="scroll-container" data-aos="fade-up" data-aos-delay="200">
-      {{ range .Params.images.gallery }}
-        <a href="{{ . }}" data-fancybox="gallery" data-caption="{{ $.Title }} Image">
-          <img src="{{ . }}" alt="{{ $.Title }} Image" class="img-fluid rounded shadow-sm">
-        </a>
-      {{ end }}
+      <div class="col-md-10 mx-auto">
+        <div class="scroll-container" data-aos="fade-up" data-aos-delay="200">
+          {{ range .Params.images.gallery }}
+            <a href="{{ . }}" data-fancybox="gallery" data-caption="{{ $.Title }} Image">
+              <img src="{{ . }}" alt="{{ $.Title }} Image" class="img-fluid rounded shadow-sm">
+            </a>
+          {{ end }}
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
-
 {{ end }}
 
+<!-- location map & highlights -->
+{{ if eq $section "location" }}
+<section id="location" class="project-section position-relative py-5 my-5">
+  <div class="vertical-title-bar">
+    <h2>L<br>O<br>C<br>A<br>T<br>I<br>O<br>N</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Icon and Text Section -->
+      <div class="col-md-6">
+        <div class="highlights d-flex flex-wrap">
+          <div class="highlight-item text-center">
+            <i class="fas fa-school fa-2x text-primary"></i>
+            <p>Schools in Vicinity</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-dove fa-2x text-primary"></i>
+            <p>Peaceful Vicinity</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-shield-alt fa-2x text-primary"></i>
+            <p>Safe & Secure Locality</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-city fa-2x text-primary"></i>
+            <p>Near City Center</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Text Description Section -->
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-primary mb-4">Prime Location</h3>
+        <p class="mb-3">Nestled in a serene and secure locality, Urban Square Apartments offer an ideal home for families. Its proximity to the city center makes daily commutes effortless and convenient.</p>
+        <h4>Nearby Facilities:</h4>
+        <ul>
+          <li><strong>Dr. N.G.P. College</strong> - 10 mins</li>
+          <li><strong>Kovai Medical Center</strong> - 15 mins</li>
+          <li><strong>Peelamedu Railway Station</strong> - 20 mins</li>
+          <li><strong>Fun Republic Mall</strong> - 20 mins</li>
+          <li><strong>Coimbatore Airport</strong> - 15 mins</li>
+        </ul>
+      </div>
+      <div class="col-md-8 mx-auto">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15661.893883101651!2d77.0371789!3d11.078047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f86b92e25e67%3A0x947ae971d41f3749!2sKalapatti%2C%20Tamil%20Nadu%20641048!5e0!3m2!1sen!2sin!4v1737222524970!5m2!1sen!2sin" 
+                 width="100%" 
+                 height="100%" 
+                 style="border:0;" 
+                 allowfullscreen="" 
+                 loading="lazy" 
+                 referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 
+{{ if eq $section "amenities" }}
+<section id="amenities" class="project-section position-relative py-5 my-5">
+  <div class="vertical-title-bar">
+    <h2>A<br>M<br>E<br>N<br>I<br>T<br>I<br>E<br>S</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Icon and Text Section -->
+      <div class="col-md-6">
+        <div class="highlights d-flex flex-wrap">
+          <!-- Indoor Amenities -->
+          <div class="highlight-item text-center">
+            <i class="fas fa-door-open fa-2x text-primary"></i>
+            <p>Keyless Smart Entry</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-envelope-open-text fa-2x text-primary"></i>
+            <p>Indoor Mailboxes</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-bolt fa-2x text-primary"></i>
+            <p>24/7 Power Backup</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-gas-pump fa-2x text-primary"></i>
+            <p>Centralized LPG Connection</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-expand-arrows-alt fa-2x text-primary"></i>
+            <p>Wide Doorways</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-bath fa-2x text-primary"></i>
+            <p>Private Balconies</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Description Section -->
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-primary mb-4">Indoor Space Amenities</h3>
+        <p class="mb-3">Every detail has been carefully designed to create a home that is both functional and luxurious. Enjoy modern conveniences like keyless entry, spacious hallways, and private balconies for a truly elevated lifestyle.</p>
+        
+        <h3 class="text-primary mb-4">Common Space Amenities</h3>
+        <p class="mb-3">Step into a community that offers unparalleled features, from gated security to a rooftop retreat, ensuring that every moment is special.</p>
+        <ul>
+          <li><i class="me-2 text-primary fas fa-lock"></i> Gated Entrance with 24-Hour Security</li>
+          <li><i class="me-2 text-primary fas fa-wifi"></i> High-Speed Wi-Fi in Common Areas</li>
+          <li><i class="me-2 text-primary fas fa-charging-station"></i> Electric Car Charging Points</li>
+          <li><i class="me-2 text-primary fas fa-parking"></i> Dedicated Parking (2 Cars & 1 Bike for 3BHK)</li>
+          <li><i class="me-2 text-primary fas fa-dumbbell"></i> Fully Equipped Fitness Center</li>
+          <li><i class="me-2 text-primary fas fa-tv"></i> Screening Room with 128” Projector</li>
+          <li><i class="me-2 text-primary fas fa-spa"></i> Rooftop Yoga Space & BBQ Pavilion</li>
+          <li><i class="me-2 text-primary fas fa-leaf"></i> Central Courtyard with Lush Landscaping</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if eq $section "features" }}
+<section id="features" class="project-section position-relative py-5 my-5">
+  <div class="vertical-title-bar">
+    <h2>F<br>E<br>A<br>T<br>U<br>R<br>E<br>S</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Icon and Text Section -->
+      <div class="col-md-6">
+        <div class="highlights d-flex flex-wrap">
+          <div class="highlight-item text-center">
+            <i class="fas fa-couch fa-2x text-primary"></i>
+            <p>Modern Interiors</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-lightbulb fa-2x text-primary"></i>
+            <p>Energy-Efficient Lighting</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-thermometer-half fa-2x text-primary"></i>
+            <p>Climate-Control Ready</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-tv fa-2x text-primary"></i>
+            <p>Smart Home Integration</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-tree fa-2x text-primary"></i>
+            <p>Sustainable Design</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-water fa-2x text-primary"></i>
+            <p>Water Conservation System</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Description Section -->
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-primary mb-4">Unique Features</h3>
+        <p class="mb-3">Urban Square Apartments are designed with innovative features to enhance your living experience. Every detail reflects cutting-edge technology and sustainable practices.</p>
+        <ul>
+          <li><i class="fas fa-home"></i> Sleek and modern interiors for a premium feel.</li>
+          <li><i class="fas fa-bolt"></i> Smart home-ready infrastructure for added convenience.</li>
+          <li><i class="fas fa-fan"></i> Energy-efficient and climate-control-ready systems.</li>
+          <li><i class="fas fa-leaf"></i> Eco-friendly design with water and energy conservation systems.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if eq $section "specs" }}
+<section id="specifications" class="project-section position-relative py-5 my-5">
+  <div class="vertical-title-bar">
+    <h2>S<br>P<br>E<br>C<br>I<br>F<br>I<br>C<br>A<br>T<br>I<br>O<br>N<br>S</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Icon and Text Section -->
+      <div class="col-md-6">
+        <div class="highlights d-flex flex-wrap">
+          <div class="highlight-item text-center">
+            <i class="fas fa-building fa-2x text-primary"></i>
+            <p>RCC Framed Structure</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-paint-roller fa-2x text-primary"></i>
+            <p>High-Quality Paints</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-window-restore fa-2x text-primary"></i>
+            <p>UPVC Windows</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-car fa-2x text-primary"></i>
+            <p>Dedicated Parking Spaces</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-shower fa-2x text-primary"></i>
+            <p>Premium Bathroom Fixtures</p>
+          </div>
+          <div class="highlight-item text-center">
+            <i class="fas fa-plug fa-2x text-primary"></i>
+            <p>Modular Electrical Fittings</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Description Section -->
+      <div class="col-md-6 mt-4 mt-md-0">
+        <h3 class="text-primary mb-4">Detailed Specifications</h3>
+        <p class="mb-3">Crafted with precision, Urban Square Apartments provide top-notch materials and finishes that ensure durability and elegance.</p>
+        <ul>
+          <li><i class="fas fa-building"></i> RCC-framed earthquake-resistant structure.</li>
+          <li><i class="fas fa-brush"></i> Premium paints for long-lasting beauty.</li>
+          <li><i class="fas fa-door-open"></i> Superior quality UPVC windows and doors.</li>
+          <li><i class="fas fa-tint"></i> Branded bathroom fixtures for a luxurious touch.</li>
+          <li><i class="fas fa-screwdriver-wrench"></i> Modular electrical fittings for seamless functionality.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
 
 {{ if eq $section "about" }}
 <section class="about py-c">
@@ -273,16 +402,14 @@
         <h2 class="display-6 mb-3">{{ .Params.title }}</h2>
         <p class="lead text-muted mb-4">{{ .Params.brief }}</p>
         <p class="text-dark mb-4">{{ .Content }}</p>
-        <a href="/about-us" class="btn btn-voyage-blue btn-md">Know More</a>
+        <a href="/about-us" class="btn btn-primary btn-md">Know More</a>
       </div>
     </div>
   </div>
 </section>
-
 {{ end }}
 
-<!-- section usp -->
- {{ if eq $section "usp" }}
+{{ if eq $section "usp" }}
  <section id="usp" class="usp-section position-relative">
   <div class="wave-bg">
     <img src="{{ .Params.bg_image }}" alt="Wave Background" class="img-fluid">
@@ -307,12 +434,8 @@
 </section>
 {{ end }}
 
-
-
-
-<!-- section cta -->
- {{ if eq $section "cta" }}
- <section class="cta-section py-c text-center d-none">
+{{ if eq $section "cta" }}
+<section class="cta-section py-c text-center d-none">
   <div class="container">
     <h2 class="cta-title display-4  mb-4">Ready to Transform Your Space?</h2>
     <p class="cta-text mb-5">
@@ -322,7 +445,6 @@
     <a href="/projects" class="btn btn-voyage-blue-outline btn-lg">View Our Projects</a>
   </div>
 </section>
-
 {{ end }}
 
 {{ end }}

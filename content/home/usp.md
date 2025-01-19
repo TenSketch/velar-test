@@ -3,7 +3,7 @@ title: "Our USP"
 description: "Discover the unique selling points of Velar Infra Projects LLP, emphasizing quality, customization, comfort, and value."
 layout: "home"
 section: "usp"
-date: 2024-12-25T00:11:37+05:30
+date: 2025-01-19T10:40:00+05:30
 draft: false
 bg_image: "/images/wave-bg.svg"
 bg_color: "#18428F" # Voyage Blue

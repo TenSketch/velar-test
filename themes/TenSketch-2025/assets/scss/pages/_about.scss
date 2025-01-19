@@ -1,2 +1,100 @@
 @import '../abstracts/variables';
+.roof-top{
+    background: $voyage-blue url(/images/about.jpg) no-repeat fixed center center / cover;
+    // background-blend-mode: multiply;
+    min-height: 50vh;
+}
 
+.about-us {
+    padding: 50px;
+    text-align: center;
+    background-color: $voyage-blue;
+  }
+  
+  .roof-shape {
+    margin-bottom: 20px;
+    img {
+      width: 100px;
+    //   height: auto;
+    }
+  }
+  
+  .section {
+    margin-bottom: 50px;
+  
+    h2 {
+      color: $serene-sage;
+      margin-bottom: 20px;
+    }
+  
+    p, li {
+      color: $serene-sage;
+    }
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 20px;
+    justify-content: center;
+    // gap: 2rem;
+  }
+  
+  .card {
+    background-color: transparent;
+    border: 2px solid $serene-sage;
+    @include border-radius;
+    padding: 20px;
+    // width: min(80%, );
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      box-shadow: 0 0 20px $serene-sage, 0 0 40px $serene-sage;
+      transform: translateY(-5px);
+    }
+  
+    .icon {
+      font-size: 25px;
+      color: $serene-sage;
+      margin-bottom: 15px;
+    }
+  
+    h3 {
+      color: $serene-sage;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+  
+    p {
+      color: $serene-sage;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .team-member {
+    border: 2px solid $serene-sage;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      box-shadow: 0 0 20px $serene-sage, 0 0 40px $serene-sage;
+    }
+  
+    h3, p {
+      color: $serene-sage;
+    }
+  }
+  

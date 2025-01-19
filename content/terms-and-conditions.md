@@ -5,7 +5,7 @@ keywords: "AK Foundation Terms, Website Terms, Program Conditions, AK Foundation
 brief: 'By using our site, registering on it, or providing any content or personal information, you agree to these Terms, including our Privacy Policy. If you do not agree or if your jurisdiction does not honour these terms, do not use the site or provide content or personal information.'
 date: 2024-12-31T17:58:14+05:30
 layout: 'terms'
-draft: false
+draft: true
 ---
 
 

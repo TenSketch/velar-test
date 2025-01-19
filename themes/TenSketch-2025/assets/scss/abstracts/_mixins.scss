@@ -1,12 +1,14 @@
 // Mixins
-@mixin text-primary{
-    color:$voyage-blue;
+@mixin text-primary {
+    color: $voyage-blue;
 }
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 @mixin border-radius($radius: 5px) {
     border-radius: $radius;
 }
@@ -34,6 +36,13 @@ $breakpoint-large-desktop: 1440px;
 
 @mixin media-tablet {
     @media (min-width: #{$breakpoint-mobile + 1}) and (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+// less than tablet all sizes one mixin
+@mixin media-tablet-down {
+    @media (max-width: #{$breakpoint-tablet}) {
         @content;
     }
 }

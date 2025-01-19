@@ -4,7 +4,7 @@ description: "Urban Square Apartments exemplify modern design with biophilic app
 keywords: "Urban Square Apartment Project, Velar Infra Projects LLP, Biophilic Design, Sustainable Living, Residential Projects"
 layout: "home"
 section: "upcoming"
-date: 2024-12-27T20:12:16+05:30
+date: 2025-01-19T05:40:00+05:30
 draft: false
 images:
   hero: "/images/urban-square-1.jpg"

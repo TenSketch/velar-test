@@ -81,7 +81,7 @@
 //     }
 // }
 
-.hero-slider {
+.slider {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -243,78 +243,150 @@
     }
 }
 
+.vertical-title-bar {
+    position: sticky;
+    height: max-content;
+    width: 50px;
+    background: $voyage-blue;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        // writing-mode: vertical-rl; /* Rotates text vertically */
+        // text-orientation: mixed; /* Ensures text orientation is correct */
+        color: $snow-white;
+        /* White text color */
+        padding: 10px;
+        // font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        // height: 100%; /* Adjust as needed */
+    }
+}
+
 // overview
-.overview {
-    background-color: $snow-white;
-    min-height: 100vh;
-    // gradient bg
+.project-section {
+    // background-color: $snow-white;
+    // min-height: 100vh;
     background-image: linear-gradient(90deg, lighten($voyage-blue, 50%), $snow-white);
 
-    .container {
-        width: 70%;
-        margin-left: auto;
+    .container-fluid {
+        width: 85%;
+        margin-right: unset;
+
+        @include media-desktop {
+            width: 90%;
+        }
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+    
+            .highlight-item {
+                width: 45%;
+                border: 2px solid $voyage-blue;
+                @include border-radius;
+                padding: 1rem;
+                text-align: center;
+                transition: transform 0.3s;
+    
+                &:hover {
+                    transform: scale(1.05);
+                }
+    
+                i {
+                    color: $voyage-blue;
+                    margin-bottom: 0.5rem;
+                }
+    
+                p {
+                    margin: 0;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        h3,
+        h4 {
+            color: $voyage-blue;
+        }
+    
+        ul {
+            padding-left: 1rem;
+            list-style: none;
+    
+            li {
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+    
+                strong {
+                    color: $voyage-blue;
+                }
+            }
+        }
 
     }
+}
+#overview{
     .scroll-container {
         display: flex;
         overflow-x: auto;
         scrollbar-width: none;
         align-items: center;
-        // position: absolute;
-        // left: 0;
-        // bottom: 0;
-        // right: 0;
         width: 90%;
-        // margin-top: 50vh;
-        a{
+
+        a {
             display: block;
-            /* width: 80vw; */
             flex: 0 0 85%;
             width: 85%;
-            
-            &+a{
+
+            &+a {
                 margin-left: 0.5rem;
             }
-            img{
+
+            img {
                 width: 90%;
                 height: 34vh;
                 /* width: 80vw; */
                 object-fit: cover;
-              
+
             }
         }
-        
-        
-    }
 
-    .vertical-title-bar {
-        position: sticky;
-        height: 50vh;
-        width: 50px;
-        background: $voyage-blue;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        h2 {
-            // writing-mode: vertical-rl; /* Rotates text vertically */
-            // text-orientation: mixed; /* Ensures text orientation is correct */
-            color: $snow-white;
-            /* White text color */
-            padding: 10px;
-            // font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            // height: 100%; /* Adjust as needed */
-        }
     }
+}
+
+// location
+#location {
 
 }
 
-//   upcoming
+// map
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.latest{
+    padding-bottom: 15rem;
+    min-height: 100vh;
+}
+// upcoming
 #kalapatti-project {
     background-color: #f8f9fa;
 
