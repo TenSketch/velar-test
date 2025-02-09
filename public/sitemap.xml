@@ -2,65 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/home/</loc>
+    <loc>https://velarinfra.com/home/</loc>
     <lastmod>2025-01-19T16:40:00+05:30</lastmod>
   </url><url>
-    <loc>/home/hero/</loc>
+    <loc>https://velarinfra.com/home/hero/</loc>
     <lastmod>2025-01-19T16:40:00+05:30</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://velarinfra.com/</loc>
     <lastmod>2025-01-19T16:40:00+05:30</lastmod>
   </url><url>
-    <loc>/home/upcoming-projects/</loc>
+    <loc>https://velarinfra.com/home/upcoming-projects/</loc>
     <lastmod>2025-01-19T16:30:00+05:30</lastmod>
   </url><url>
-    <loc>/home/slider/</loc>
+    <loc>https://velarinfra.com/home/design-note/</loc>
+    <lastmod>2025-01-19T16:29:00+05:30</lastmod>
+  </url><url>
+    <loc>https://velarinfra.com/home/slider/</loc>
     <lastmod>2025-01-19T16:25:00+05:30</lastmod>
   </url><url>
-    <loc>/home/overview/</loc>
+    <loc>https://velarinfra.com/home/overview/</loc>
     <lastmod>2025-01-19T16:20:00+05:30</lastmod>
   </url><url>
-    <loc>/home/features/</loc>
+    <loc>https://velarinfra.com/home/features/</loc>
     <lastmod>2025-01-19T12:40:00+05:30</lastmod>
   </url><url>
-    <loc>/home/specifications/</loc>
+    <loc>https://velarinfra.com/home/specifications/</loc>
     <lastmod>2025-01-19T12:40:00+05:30</lastmod>
   </url><url>
-    <loc>/home/amenities/</loc>
+    <loc>https://velarinfra.com/home/amenities/</loc>
     <lastmod>2025-01-19T12:35:00+05:30</lastmod>
   </url><url>
-    <loc>/home/location/</loc>
+    <loc>https://velarinfra.com/home/location/</loc>
     <lastmod>2025-01-19T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>/home/about/</loc>
+    <loc>https://velarinfra.com/home/about/</loc>
     <lastmod>2025-01-19T11:40:00+05:30</lastmod>
   </url><url>
-    <loc>/home/usp/</loc>
+    <loc>https://velarinfra.com/home/usp/</loc>
     <lastmod>2025-01-19T10:40:00+05:30</lastmod>
   </url><url>
-    <loc>/footer/</loc>
+    <loc>https://velarinfra.com/footer/</loc>
     <lastmod>2025-01-10T17:02:05+05:30</lastmod>
   </url><url>
-    <loc>/home/gallery/</loc>
+    <loc>https://velarinfra.com/home/gallery/</loc>
     <lastmod>2024-12-30T15:37:10+05:30</lastmod>
   </url><url>
-    <loc>/home/projects-portfolio/</loc>
+    <loc>https://velarinfra.com/home/projects-portfolio/</loc>
     <lastmod>2024-12-27T20:11:16+05:30</lastmod>
   </url><url>
-    <loc>/home/testimonials/</loc>
+    <loc>https://velarinfra.com/home/testimonials/</loc>
     <lastmod>2024-12-25T00:13:10+05:30</lastmod>
   </url><url>
-    <loc>/thank-you/</loc>
+    <loc>https://velarinfra.com/thank-you/</loc>
     <lastmod>2024-12-15T15:59:23+05:30</lastmod>
   </url><url>
-    <loc>/contact-us/</loc>
+    <loc>https://velarinfra.com/contact-us/</loc>
     <lastmod>2024-12-03T16:01:41+05:30</lastmod>
   </url><url>
-    <loc>/about-us/</loc>
+    <loc>https://velarinfra.com/about-us/</loc>
     <lastmod>2024-12-03T16:01:28+05:30</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://velarinfra.com/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://velarinfra.com/tags/</loc>
   </url>
 </urlset>

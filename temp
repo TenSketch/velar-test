@@ -67,3 +67,30 @@
 # - title: "Corporate Clients"
 #   content: >
 #     Details are available upon request.
+
+<h2 class="title mb-4 text-primary">Your soul finds its new home here.</h2>
+
+ <!-- <div class="col-md-10 image-container">
+          <div class="image-overlay"></div>
+        </div> -->
+        <!-- <div class="sketches">
+          <img src="sketch-1.png" alt="Sketch 1">
+          <img src="sketch-2.png" alt="Sketch 2">
+          <img src="sketch-3.png" alt="Sketch 3">
+        </div> -->
+
+        <!-- <p class="description">
+          At its core, a beautifully designed central 
+          couryard and a striking double-height atrium 
+          keep the space open, airy, and alive. It’s not just 
+          about aesthetics—it’s about creating a home that 
+          feels connected, breathable, and full of life.
+        </p>
+        <p class="description">
+          Every home is designed with both function and 
+          privacy in mind—no shared walls, just open, 
+          flowing spaces that feel like yours alone. It’s a 
+          thoughtul blend of design and comfor , making 
+          every inch feel intentional, elegant, and made for 
+          the way you live
+        </p> -->

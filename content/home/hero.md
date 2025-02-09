@@ -1,9 +1,10 @@
 ---
 title: "Urban Square"
-# description: "A premium bespoke apartments at Kalapatti, Coimbatore"
+description: "Coimbatore"
 # subtitle: "Stay tuned for the Grand Launch on January 25, 2025!"
 # brief: "Turning architectural dreams into reality"
 link: "#upcoming"
+image: "/images/VELAR-LOGO-h.png"
 background: "/videos/stock-video.mp4"
 layout: "home"
 section: "hero"

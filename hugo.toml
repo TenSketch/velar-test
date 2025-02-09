@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = 'https://velarinfra.com/'
 languageCode = 'en-us'
 title = 'Velar | Modular Interiors and Construction Innovations'
 theme = 'TenSketch-2025'

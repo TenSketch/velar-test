@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=egde">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="{{ .Site.Params.favicon | relURL }}">
+<link rel="icon" type="image/png" href="{{ .Site.Params.logoicon_scrolled | relURL }}">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 <meta name="description" content="{{ .Params.Description | default .Site.Params.Description }}">
 <meta name="keywords" content="{{ .Params.Keywords | default .Site.Params.Keywords }}">
