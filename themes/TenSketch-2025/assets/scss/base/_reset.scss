@@ -80,7 +80,7 @@ html {
 body {
   overflow-x: hidden;
   // padding-top: $navbar-height;
-  font-family: $font-primary;
+  // font-family: $font-primary;
   
 
 }
@@ -100,10 +100,12 @@ h3,
 h4,
 h5,
 h6 {
-  // line-height: 1.3 !important;
+  line-height: 1.3 !important;
   // color: $voyage-blue;
   // font-weight: $fw-semibold !important;
-  @include buljirya-font-face;
+  // @include heading-font;
+  font-family: $heading-font;
+  letter-spacing: 1.3px;
 
 }
 

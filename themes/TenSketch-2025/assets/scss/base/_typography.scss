@@ -1,25 +1,21 @@
 
 @font-face {
-    font-family: "Buljirya", serif;
-    src: url(/fonts/Buljirya.otf);
+    font-family: "Fontspring-DEMO-juanaalt-regular";
+    src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype") ;
 }
 
 
 // Define the font face mixin
-@mixin buljirya-font-face {
+@mixin heading-font {
     @font-face {
-      font-family: "Buljirya", serif;
-      src: url(/fonts/Buljirya.otf);
+      font-family: "Fontspring-DEMO-juanaalt-regular";
+      src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype");
     }
   }
   
   // Use the mixin
-  @include buljirya-font-face;
+  @include heading-font;
   
   // Define the font family variable
-  $buljirya-font: "Buljirya", serif;
+  $heading-font: "Fontspring-DEMO-juanaalt-regular";
   
-  // Use the variable
-  body {
-    font-family: $buljirya-font;
-  }

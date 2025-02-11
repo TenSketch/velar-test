@@ -19,7 +19,7 @@
         <h1 class="display-md-3 mb-4" data-aos="fade-up" data-aos-delay="1000">Homes Built To Impress. <br> Crafted For A Sense Of Belonging...</h1>
         <hr>
         <h3 class="display-md-2 " data-aos="fade-up" data-aos-delay="1500">VELAR presents...</h3>
-        <h2 class="display-md-4 text-uppercase" data-aos="fade-up" data-aos-delay="2200">{{ .Params.title }}</h2>  
+        <h2 class="display-md-4" data-aos="fade-up" data-aos-delay="2200">{{ .Params.title }}</h2>  
          <!-- <h4 class="mb-3" data-aos="fade-up" data-aos-delay="2400">{{ .Params.description }}</h4> -->
          <!-- image -->
           <!-- <img src="{{ .Params.image }}" alt="{{ .Name }}" class="img-fluid" data-aos="fade-up" data-aos-delay="2600"> -->
@@ -42,10 +42,10 @@
   <div class="reveal d-none d-md-block" ></div>
   <div class="reveal d-md-block" ></div>
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center min-vh-100">
       <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="400">
         <h3 data-aos="fade-up" data-aos-delay="500">Your soul finds its <br> New Home Here.</h3>
-        <p data-aos="fade-up" data-aos-delay="600">
+        <p class="mb-0" data-aos="fade-up" data-aos-delay="600">
           Urban Square is where thoughtful craftsmanship meets modern aspirations — 
           a space that doesn’t just house you but understands you. Set in the heart of 
           Coimbatore’s growing IT hub, Urban Square is more than just a residence, it is 
@@ -560,6 +560,31 @@
   </div>
 </section>
 {{ end }}
+
+  <!-- section portfolio -->
+  {{ if eq $section "portfolio" }}
+  <section id="projects" class="projects py-c ">
+   <div class="container">
+     <div class="text-center mb-5">
+       <h2 class="display-4 ">{{ .Title }}</h2>
+     </div>
+     <div class="row justify-content-center justify-content-md-between ">
+       {{ range .Params.projects }}
+       <div class="col-custom">
+         <div class="project-card d-flex flex-column justify-content-between">
+           <img src="{{ .image }}" alt="{{ .title }}" class="card-img-top rounded">
+           <div class="card-body mt-3">
+             <h5 class="card-title ">{{ .title }}</h5>
+             <p class="">{{ .location }}</p>
+             <!-- <a href="{{ .link }}" class="btn btn-snow-white">View Gallery</a> -->
+           </div>
+         </div>
+       </div>
+       {{ end }}
+     </div>
+   </div>
+ </section>
+ {{ end }}
 
 {{ if eq $section "cta" }}
 <section class="cta-section py-c text-center d-none">

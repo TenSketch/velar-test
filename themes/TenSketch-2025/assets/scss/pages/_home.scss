@@ -770,7 +770,7 @@ background-color: $clr-secondary;
 
 //   portfolio
 .projects {
-    background-color: $voyage-blue;
+    background-color: $clr-tertiary;
     color: $snow-white !important;
 
     h2 {
@@ -779,36 +779,37 @@ background-color: $clr-secondary;
 
     .col-custom {
         flex: 0 0 90%;
-
+        margin-top: 2rem;
         @include media-desktop {
             flex: 0 0 30%;
         }
     }
 
     .project-card {
-        background-color: $voyage-blue;
+        background-color: $clr-tertiary;
         //   border-radius: 12px;
         //   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.7);
         @include border-radius;
         // background: #18428F;
-        box-shadow: -20px -20px 38px #112e63,
-            20px 20px 38px #1f56bb;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        // box-shadow: -20px -20px 38px #112e63,
+        //     20px 20px 38px #1f56bb;
+        transition: transform 0.3s ease;
+        // min-height: 50vh;
 
         &:hover {
             transform: translateY(-5px);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+            // box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
         }
 
         .card-img-top {
             @include border-radius;
 
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            // transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-            &:hover {
-                transform: scale(1.05);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-            }
+            // &:hover {
+            //     transform: scale(1.05);
+            //     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            // }
         }
 
         .card-body {

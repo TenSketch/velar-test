@@ -24,7 +24,7 @@
 
     <!-- Navbar Content -->
     <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ms-auto gap-2 gap-lg-0 py-4 py-md-0">
+      <ul class="navbar-nav ms-auto gap-2 gap-md-3 py-4 py-md-0">
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="nav-item dropdown text-end text-lg-start">
@@ -47,12 +47,12 @@
         <!-- Add mobile and Instagram links -->
         <li class="nav-item text-end text-lg-start">
           <a class="nav-link" href="tel:{{ .Site.Params.phone }}">
-            <i class="fas fa-phone-alt"></i> Call Us
+            <i class="fas fa-phone-alt"></i>
           </a>
         </li>
         <li class="nav-item text-end text-lg-start">
           <a class="nav-link" href="{{ .Site.Params.instagram }}" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
       </ul>
