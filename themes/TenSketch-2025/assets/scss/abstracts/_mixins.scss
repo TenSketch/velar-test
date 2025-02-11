@@ -2,6 +2,18 @@
 @mixin text-primary {
     color: $voyage-blue;
 }
+@mixin bg-primary{
+    background-color: $clr-primary;
+    color: $snow-white;
+}
+@mixin bg-secondary{
+    background-color: $clr-secondary;
+    color: $snow-white;
+}
+@mixin bg-tertiary{
+    background-color: $clr-tertiary;
+    color: $snow-white;
+}
 
 @mixin flex-center {
     display: flex;

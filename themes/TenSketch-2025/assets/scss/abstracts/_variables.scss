@@ -32,8 +32,23 @@ $light-bg: #e0e5ec;
 
 
 $navbar-height:10vh;
-$font-primary: "Raleway", serif;;
+$font-primary: "Buljirya", serif;
 $font-secondary: "Montserrat", serif;
 $fw-bold:700;
 $fw-semibold:600;
 // $italic: italic;
+
+// new colors
+$brunswick-green: hsla(156, 53%, 17%, 1);
+$mint: hsla(156, 53%, 48%, 1);
+$wine: hsla(352, 37%, 28%, 1);
+$old-rose: hsla(352, 37%, 64%, 1);
+$reseda-green: hsla(54, 19%, 44%, 1);
+$champagne-pink: hsla(21, 56%, 89%, 1);
+
+$clr-primary: hsla(156, 53%, 17%, 1);
+$clr-primary--light: hsla(156, 53%, 48%, 1);
+$clr-secondary: hsla(352, 37%, 28%, 1);
+$clr-secondary--light: hsla(352, 37%, 64%, 1);
+$clr-tertiary: hsla(54, 19%, 44%, 1);
+$clr-tertiary--light: hsla(21, 56%, 89%, 1);

@@ -1,3 +1,25 @@
 
+@font-face {
+    font-family: "Buljirya", serif;
+    src: url(/fonts/Buljirya.otf);
+}
 
 
+// Define the font face mixin
+@mixin buljirya-font-face {
+    @font-face {
+      font-family: "Buljirya", serif;
+      src: url(/fonts/Buljirya.otf);
+    }
+  }
+  
+  // Use the mixin
+  @include buljirya-font-face;
+  
+  // Define the font family variable
+  $buljirya-font: "Buljirya", serif;
+  
+  // Use the variable
+  body {
+    font-family: $buljirya-font;
+  }

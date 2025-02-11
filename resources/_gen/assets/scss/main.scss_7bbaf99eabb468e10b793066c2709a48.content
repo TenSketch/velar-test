@@ -28,6 +28,17 @@ hr.bg-primary {
   z-index: 0;
   background-color: transparent; }
 
+@font-face {
+  font-family: "Buljirya", serif;
+  src: url(/fonts/Buljirya.otf); }
+
+@font-face {
+  font-family: "Buljirya", serif;
+  src: url(/fonts/Buljirya.otf); }
+
+body {
+  font-family: "Buljirya", serif; }
+
 .text-primary {
   color: #18428F !important; }
 
@@ -117,15 +128,17 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Raleway", serif; }
+  font-family: "Buljirya", serif; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600 !important; }
+@font-face {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Buljirya", serif;
+    src: url(/fonts/Buljirya.otf); } }
 
 a {
   text-decoration: none; }
@@ -143,11 +156,19 @@ img {
     .navbar .navbar-brand img {
       width: clamp(30%, 130px, 70%);
       transition: width 0.3s ease; }
-  .navbar .navbar-toggler img {
-    width: 30px; }
+  .navbar .navbar-toggler {
+    box-shadow: none; }
+    .navbar .navbar-toggler img {
+      height: 30px; }
   .navbar .nav-link {
     color: #FEFEFA;
-    font-weight: 500; }
+    font-weight: 500;
+    font-size: 1.2rem; }
+
+@font-face {
+  .navbar .nav-link {
+    font-family: "Buljirya", serif;
+    src: url(/fonts/Buljirya.otf); } }
   .navbar.scrolled {
     background-color: #FEFEFA;
     box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.3);
@@ -159,7 +180,7 @@ img {
       color: #18428F; }
 
 .footer {
-  background-color: #D0E8E4; }
+  background-color: #f3ded3; }
   .footer .subtitle {
     font-size: 1.25rem;
     font-weight: 600;
@@ -383,44 +404,32 @@ hr.bg-primary {
 
 .hero {
   position: relative;
-  min-height: 100vh;
   overflow: hidden;
+  background-color: #144230;
+  color: #FEFEFA;
   /* Prevents overflow */
   /* Add a pseudo-element for the overlay */ }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* Optional overlay */
-    background-color: rgba(24, 66, 144, 0.4);
-    /* Light white overlay with 60% opacity */
-    z-index: 1;
-    /* Place the overlay between the video and content */ }
   .hero .video-background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     /* Ensures the video fills the viewport and maintains aspect ratio */
     z-index: -1;
     /* Keeps the video behind content */ }
-  .hero .container {
+  .hero .container-fluid {
     position: relative;
     z-index: 1; }
-    .hero .container .col-auto {
+    .hero .container-fluid .col-auto {
       color: #18428F;
       color: #FEFEFA; }
-    .hero .container .title {
+    .hero .container-fluid .title {
       text-transform: capitalize !important; }
-    .hero .container .subtitle {
+    .hero .container-fluid .subtitle {
       text-transform: capitalize;
       font-weight: 600 !important; }
-    .hero .container .brief {
+    .hero .container-fluid .brief {
       font-style: italic;
       font-weight: 600 !important; }
   .hero .link-down {
@@ -430,8 +439,8 @@ hr.bg-primary {
 
 .latest {
   background: #e0e5ec;
-  min-height: 50vh;
-  padding-bottom: 10rem; }
+  padding-bottom: 15rem;
+  min-height: 100vh; }
   .latest .card-neumorphic {
     background: #e0e5ec;
     border-radius: 20px;
@@ -453,34 +462,32 @@ hr.bg-primary {
 
 .design-note-section {
   padding: 3rem 1rem;
-  background: #f4f3ed; }
+  background: #86815b;
+  color: #f3ded3; }
   .design-note-section .text-content {
     text-align: center;
     padding: 1rem; }
     .design-note-section .text-content .section-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      line-height: 1.4;
-      color: #2c2c2c; }
+      line-height: 1.4; }
     .design-note-section .text-content .architect-name {
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-top: 0.5rem;
-      color: #6d6c6a; }
+      margin-top: 0.5rem; }
       .design-note-section .text-content .architect-name .highlight {
-        color: #b3955f;
         font-weight: 700; }
     .design-note-section .text-content .sketches {
+      overflow-x: auto;
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0; }
-      .design-note-section .text-content .sketches img {
-        width: 50px;
-        opacity: 0.8; }
+      scrollbar-width: none;
+      align-items: center;
+      position: relative;
+      gap: 1rem; }
+      .design-note-section .text-content .sketches .img-container {
+        flex: 1 0 40%;
+        background-color: #86815b; }
+        .design-note-section .text-content .sketches .img-container img {
+          border-radius: 5px;
+          border: 2px solid #f3ded3; }
     .design-note-section .text-content .description {
-      font-size: 1rem;
-      color: #494847;
+      color: #f3ded3;
       line-height: 1.6;
       margin-top: 1rem; }
   .design-note-section .image-container {
@@ -506,10 +513,11 @@ hr.bg-primary {
     .design-note-section .image-container {
       text-align: right; } }
 .urban_square-intro {
+  background-color: #D0E8E4;
   position: relative;
   padding: 5rem 1rem;
   text-align: center;
-  color: #000;
+  color: #144230;
   min-height: 100vh; }
   @media (max-width: 768px) {
     .urban_square-intro {
@@ -574,7 +582,7 @@ hr.bg-primary {
   position: sticky;
   height: max-content;
   width: 50px;
-  background: #18428F;
+  background: #c5818a;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -582,7 +590,7 @@ hr.bg-primary {
   align-items: center;
   justify-content: center; }
   .vertical-title-bar h2 {
-    color: #FEFEFA;
+    color: #622d34;
     /* White text color */
     padding: 10px;
     font-weight: bold;
@@ -590,7 +598,12 @@ hr.bg-primary {
     font-size: 1.3rem; }
 
 .project-section {
-  background-image: linear-gradient(90deg, #b4caf2, #FEFEFA); }
+  background-color: #622d34;
+  color: #f3ded3; }
+  .project-section .section-title {
+    color: #FFF; }
+  .project-section .description {
+    color: #c5818a; }
   .project-section .container-fluid {
     width: 85%;
     margin-right: unset; }
@@ -603,7 +616,7 @@ hr.bg-primary {
       gap: 1.5rem; }
       .project-section .container-fluid .highlights .highlight-item {
         width: 45%;
-        border: 2px solid #18428F;
+        border: 2px solid #c5818a;
         border-radius: 5px;
         padding: 1rem;
         text-align: center;
@@ -611,23 +624,23 @@ hr.bg-primary {
         .project-section .container-fluid .highlights .highlight-item:hover {
           transform: scale(1.05); }
         .project-section .container-fluid .highlights .highlight-item i {
-          color: #18428F;
+          color: #c5818a;
           margin-bottom: 0.5rem; }
         .project-section .container-fluid .highlights .highlight-item p {
           margin: 0;
           font-size: 1rem;
           font-weight: 500; }
-    .project-section .container-fluid h3,
-    .project-section .container-fluid h4 {
-      color: #18428F; }
     .project-section .container-fluid ul {
       padding-left: 1rem;
       list-style: none; }
       .project-section .container-fluid ul li {
         margin-bottom: 0.5rem;
-        font-size: 1rem; }
+        font-size: 1rem;
+        color: #c5818a; }
+        .project-section .container-fluid ul li i {
+          color: #c5818a; }
         .project-section .container-fluid ul li strong {
-          color: #18428F; }
+          color: #FFF; }
 
 #overview .scroll-container {
   display: flex;
@@ -658,10 +671,6 @@ hr.bg-primary {
     left: 0;
     width: 100%;
     height: 100%; }
-
-.latest {
-  padding-bottom: 15rem;
-  min-height: 100vh; }
 
 #kalapatti-project {
   background-color: #f8f9fa; }
@@ -716,7 +725,7 @@ hr.bg-primary {
   margin-bottom: 2rem; }
 
 .usp-section {
-  background-color: #18428F;
+  background-color: #144230;
   position: relative;
   padding: 2rem 0 7rem; }
   .usp-section .container {

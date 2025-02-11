@@ -13,13 +13,17 @@ background-color: transparent;
         }
     }
     .navbar-toggler{
+        box-shadow: none;
         img{
-            width: 30px;
+            // width: 30px;
+            height: 30px;
         }
     }
     .nav-link{
         color: $snow-white;
         font-weight: 500;
+  @include buljirya-font-face;
+        font-size: 1.2rem;
     }   
     // .navbar-collapse{
 
