@@ -1,6 +1,6 @@
 baseURL = 'https://velarinfra.com/'
 languageCode = 'en-us'
-title = 'Velar | Modular Interiors and Construction Innovations'
+title = 'Velar | Crafting Homes and Elevating Spaces'
 theme = 'TenSketch-2025'
 [params]
 logoicon = '/favicon1.png'
