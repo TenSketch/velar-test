@@ -124,7 +124,8 @@ html {
     opacity: 1; } }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Montserrat", serif; }
 
 h1,
 h2,
