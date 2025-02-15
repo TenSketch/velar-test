@@ -1,11 +1,12 @@
 ---
-title: "Urban Square Apartment, Coimbatore"
+title: "Urban Square"
 description: "Coimbatore"
 # subtitle: "Stay tuned for the Grand Launch on January 25, 2025!"
 # brief: "Turning architectural dreams into reality"
 link: "#upcoming"
 image: "/images/velar-logo-white.png"
-background: "/videos/URBAN-SQUARE-VIDEO.mp4"
+background_desktop: "/videos/URBAN-SQUARE-VIDEO-Landscape.mp4"
+background_mobile: "/videos/URBAN-SQUARE-VIDEO-Portrait.mp4"
 layout: "home"
 section: "hero"
 date: 2025-01-19T16:40:00+05:30

@@ -34,4 +34,7 @@ hr{
     width: 100%;
     z-index: 0;
     background-color: transparent;
+    @include media-desktop{
+        bottom: -60px;
+    }
 }

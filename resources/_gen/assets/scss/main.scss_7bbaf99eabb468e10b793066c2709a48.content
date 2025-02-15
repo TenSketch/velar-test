@@ -27,7 +27,9 @@ hr.bg-primary {
   width: 100%;
   z-index: 0;
   background-color: transparent; }
-
+  @media (min-width: 769px) {
+    .wave-bg {
+      bottom: -60px; } }
 @font-face {
   font-family: "Fontspring-DEMO-juanaalt-regular";
   src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype"); }
@@ -65,7 +67,9 @@ hr.bg-primary {
   width: 100%;
   z-index: 0;
   background-color: transparent; }
-
+  @media (min-width: 769px) {
+    .wave-bg {
+      bottom: -60px; } }
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem; }
@@ -332,7 +336,9 @@ hr.bg-primary {
   width: 100%;
   z-index: 0;
   background-color: transparent; }
-
+  @media (min-width: 769px) {
+    .wave-bg {
+      bottom: -60px; } }
 .slider {
   position: relative;
   height: 90vh;
@@ -383,9 +389,11 @@ hr.bg-primary {
   border-radius: 5px;
   letter-spacing: 8px; }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   color: #FEFEFA !important; }
-  .swiper-button-next::after, .swiper-button-prev::after {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     font-size: 25px; }
 
 .agent-img {
@@ -396,9 +404,6 @@ hr.bg-primary {
 
 .hero {
   position: relative;
-  overflow: hidden;
-  background-color: #144230;
-  color: #FEFEFA;
   /* Prevents overflow */
   /* Add a pseudo-element for the overlay */ }
   .hero .video-background {
@@ -413,6 +418,12 @@ hr.bg-primary {
   .hero .container-fluid {
     position: relative;
     z-index: 1; }
+    .hero .container-fluid .content {
+      background-color: #144230;
+      color: #FEFEFA; }
+      @media (max-width: 768px) {
+        .hero .container-fluid .content {
+          margin-top: 100vh; } }
     .hero .container-fluid .col-auto {
       color: #18428F;
       color: #FEFEFA; }
@@ -424,33 +435,38 @@ hr.bg-primary {
     .hero .container-fluid .brief {
       font-style: italic;
       font-weight: 600 !important; }
+    .hero .container-fluid .logo {
+      width: 70%; }
   .hero .link-down {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%); }
 
 .latest {
-  background: #e0e5ec;
+  background: #144230;
   padding-bottom: 15rem;
-  min-height: 100vh; }
+  min-height: 100vh;
+  color: #FEFEFA; }
   .latest .card-neumorphic {
-    background: #e0e5ec;
+    background: #144230;
     border-radius: 20px;
-    box-shadow: 7px 7px 15px #b8b9be, -7px -7px 15px #ffffff;
+    box-shadow: 7px 7px 15px #123a2a, -7px -7px 15px #184e38;
     padding: 20px;
     height: max-content; }
   .latest .circle-btn {
     width: 60px;
     height: 60px;
-    background: #e0e5ec;
+    background: #144230;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 7px 7px 15px #b8b9be, -7px -7px 15px #ffffff;
+    box-shadow: 7px 7px 15px #123a2a, -7px -7px 15px #184e38;
     /* margin: auto; */ }
     .latest .circle-btn .fa {
-      color: #18428F; }
+      color: #FEFEFA; }
+  .latest .btn-snow-white-outline {
+    background-color: transparent; }
 
 .design-note-section {
   padding: 3rem 1rem;
@@ -463,8 +479,6 @@ hr.bg-primary {
       line-height: 1.4; }
     .design-note-section .text-content .architect-name {
       margin-top: 0.5rem; }
-      .design-note-section .text-content .architect-name .highlight {
-        font-weight: 700; }
     .design-note-section .text-content .sketches {
       overflow-x: auto;
       display: flex;
@@ -473,10 +487,11 @@ hr.bg-primary {
       position: relative;
       gap: 1rem; }
       .design-note-section .text-content .sketches .img-container {
-        flex: 1 0 40%;
-        background-color: #86815b; }
+        flex: 1 0 40%; }
+        @media (min-width: 321px) and (max-width: 768px) {
+          .design-note-section .text-content .sketches .img-container {
+            flex: 1 0 80%; } }
         .design-note-section .text-content .sketches .img-container img {
-          border-radius: 5px;
           border: 2px solid #f3ded3; }
     .design-note-section .text-content .description {
       color: #f3ded3;
@@ -504,6 +519,15 @@ hr.bg-primary {
       padding-right: 3rem; }
     .design-note-section .image-container {
       text-align: right; } }
+  .design-note-section .bottom-content .description {
+    border-radius: 5px;
+    border: 2px solid #f3ded3; }
+    @media (min-width: 769px) {
+      .design-note-section .bottom-content .description {
+        border: none; } }
+  @media (max-width: 768px) {
+    .design-note-section .bottom-content {
+      overflow-x: scroll; } }
 .urban_square-intro {
   background-color: #D0E8E4;
   position: relative;
@@ -547,7 +571,6 @@ hr.bg-primary {
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 1rem;
-    text-transform: uppercase;
     letter-spacing: 1px;
     animation: fadeInUp 1s ease-in-out; }
   .urban_square-intro p {
@@ -570,6 +593,33 @@ hr.bg-primary {
       text-align: left; }
       .urban_square-intro .container {
         max-width: 900px; } }
+.overview-brochure {
+  background-color: #f3ded3;
+  padding: 80px 0; }
+  .overview-brochure .content-box {
+    padding-right: 30px; }
+  .overview-brochure .heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6b6a4d; }
+  .overview-brochure .description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #4d4c3b;
+    line-height: 1.6; }
+  .overview-brochure .building-image {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); }
+
+@media (max-width: 768px) {
+  .urban-square-section {
+    text-align: center;
+    padding: 50px 20px; }
+    .urban-square-section .content-box {
+      padding-right: 0; }
+    .urban-square-section .building-image {
+      margin-top: 20px; } }
+
 .vertical-title-bar {
   position: sticky;
   height: max-content;
@@ -616,7 +666,7 @@ hr.bg-primary {
         .project-section .container-fluid .highlights .highlight-item:hover {
           transform: scale(1.05); }
         .project-section .container-fluid .highlights .highlight-item i {
-          color: #c5818a;
+          color: #FEFEFA;
           margin-bottom: 0.5rem; }
         .project-section .container-fluid .highlights .highlight-item p {
           margin: 0;
@@ -651,6 +701,37 @@ hr.bg-primary {
       height: 34vh;
       /* width: 80vw; */
       object-fit: cover; }
+
+#amenities .highlight-item {
+  transition: background-color 0.3s ease-in-out;
+  padding: 1rem 0.5rem;
+  cursor: pointer; }
+  #amenities .highlight-item p {
+    margin: 0; }
+  #amenities .highlight-item:hover {
+    background-color: #c5818a; }
+  #amenities .highlight-item.active {
+    border: 1px solid #c5818a; }
+
+#amenitiesCarousel img {
+  height: 80vh;
+  object-fit: cover; }
+
+#location {
+  background-color: #144230; }
+  #location .vertical-title-bar {
+    background-color: #3abb87; }
+    #location .vertical-title-bar h2 {
+      color: #144230; }
+  #location .highlight-item {
+    border-color: #3abb87;
+    color: #3abb87; }
+    #location .highlight-item i {
+      color: #FEFEFA; }
+  #location .description {
+    color: #3abb87; }
+    #location .description i {
+      color: #FEFEFA; }
 
 .map-container {
   position: relative;
@@ -901,7 +982,9 @@ hr.bg-primary {
   width: 100%;
   z-index: 0;
   background-color: transparent; }
-
+  @media (min-width: 769px) {
+    .wave-bg {
+      bottom: -60px; } }
 .page-title {
   min-height: 50vh;
   background-image: url(/images/akf_flag.jpg);
