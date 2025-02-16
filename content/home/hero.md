@@ -1,5 +1,5 @@
 ---
-title: "Urban Square"
+title: "/images/URBAN-SQUARE-logo-600.png"
 description: "Coimbatore"
 # subtitle: "Stay tuned for the Grand Launch on January 25, 2025!"
 # brief: "Turning architectural dreams into reality"

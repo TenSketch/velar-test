@@ -187,3 +187,81 @@
           </a>
         </div>
         
+
+        <div class="row align-items-center">
+          <!-- Amenities List (Thumbnails) -->
+          <div class="col-md-3 d-none d-md-block">
+            <div class="swiper thumbsSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/images/kids-play-area.jpg" class="img-fluid" alt="Kids Play Area">
+                  <p>Kids Play Area</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/landscaped-surroundings.jpg" class="img-fluid" alt="Landscaped Surroundings">
+                  <p>Landscaped Surroundings</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/gym.jpg" class="img-fluid" alt="Fully Equipped Gym">
+                  <p>Fully Equipped Gym</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/yoga-room.jpg" class="img-fluid" alt="Yoga / Meditation Room">
+                  <p>Yoga / Meditation Room</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/multipurpose-hall.jpg" class="img-fluid" alt="Multipurpose Hall">
+                  <p>Multipurpose Hall</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Image Slider (Main) -->
+          <div class="col-md-9">
+            <div class="swiper mainSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/images/kids-play-area.jpg" class="img-fluid" alt="Kids Play Area">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/landscaped-surroundings.jpg" class="img-fluid" alt="Landscaped Surroundings">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/gym.jpg" class="img-fluid" alt="Fully Equipped Gym">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/yoga-room.jpg" class="img-fluid" alt="Yoga / Meditation Room">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/multipurpose-hall.jpg" class="img-fluid" alt="Multipurpose Hall">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Swiper Initialization Script -->
+        <script>
+          var swiperThumbs = new Swiper(".thumbsSwiper", {
+            spaceBetween: 10,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            direction: "vertical",
+          });
+        
+          var swiperMain = new Swiper(".mainSwiper", {
+            spaceBetween: 10,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+              swiper: swiperThumbs,
+            },
+          });
+        </script>
+        

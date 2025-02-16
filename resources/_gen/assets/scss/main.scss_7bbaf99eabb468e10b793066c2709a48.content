@@ -31,12 +31,20 @@ hr.bg-primary {
     .wave-bg {
       bottom: -60px; } }
 @font-face {
-  font-family: "Fontspring-DEMO-juanaalt-regular";
-  src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype"); }
+  font-family: "Adorage";
+  src: url("/fonts/Adorage.otf") format("opentype"); }
 
 @font-face {
-  font-family: "Fontspring-DEMO-juanaalt-regular";
-  src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype"); }
+  font-family: "AeonikTRIAL";
+  src: url("/fonts/AeonikTRIAL-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: "Adorage";
+  src: url("/fonts/Adorage.otf") format("opentype"); }
+
+@font-face {
+  font-family: "AeonikTRIAL";
+  src: url("/fonts/AeonikTRIAL-Regular.otf") format("opentype"); }
 
 .text-primary {
   color: #18428F !important; }
@@ -129,7 +137,10 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", serif; }
+  font-family: "AeonikTRIAL"; }
+
+p {
+  letter-spacing: 1.5px; }
 
 h1,
 h2,
@@ -138,7 +149,7 @@ h4,
 h5,
 h6 {
   line-height: 1.3 !important;
-  font-family: "Fontspring-DEMO-juanaalt-regular";
+  font-family: "Adorage";
   letter-spacing: 1.3px; }
 
 a {
@@ -180,30 +191,29 @@ img {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #18428F; }
+    color: #86815b; }
   .footer .footer-link {
-    color: #555;
+    color: #622d34;
     text-decoration: none;
     transition: color 0.3s ease; }
     .footer .footer-link:hover {
-      color: #18428F; }
+      color: #c5818a; }
   .footer ul {
     list-style: none;
     padding: 0; }
   .footer .form-control {
-    border: 2px solid #ccc;
+    border: 2px solid #622d34;
     border-radius: 5px;
     transition: border-color 0.3s ease; }
     .footer .form-control:focus {
-      border-color: #18428F;
-      box-shadow: 0 0 5px rgba(24, 66, 143, 0.5); }
+      box-shadow: 0 0 5px #c5818a; }
   .footer button.btn {
-    background-color: #18428F;
-    color: #fff;
-    border: none;
+    background-color: transparent;
+    color: #622d34;
+    border: 2px solid #622d34;
     transition: background-color 0.3s ease; }
     .footer button.btn:hover {
-      background-color: #1a4fa5; }
+      background-color: #c5818a; }
   .footer .footer-bottom p {
     font-size: 0.9rem; }
   .footer .footer-bottom .text-red {
@@ -436,7 +446,9 @@ hr.bg-primary {
       font-style: italic;
       font-weight: 600 !important; }
     .hero .container-fluid .logo {
-      width: 70%; }
+      width: 60%; }
+    .hero .container-fluid .logo-1 {
+      width: 90%; }
   .hero .link-down {
     bottom: 0;
     left: 50%;
@@ -453,6 +465,8 @@ hr.bg-primary {
     box-shadow: 7px 7px 15px #123a2a, -7px -7px 15px #184e38;
     padding: 20px;
     height: max-content; }
+  .latest p {
+    color: #3abb87; }
   .latest .circle-btn {
     width: 60px;
     height: 60px;
@@ -472,6 +486,8 @@ hr.bg-primary {
   padding: 3rem 1rem;
   background: #86815b;
   color: #f3ded3; }
+  .design-note-section h1, .design-note-section h4 {
+    color: #FEFEFA; }
   .design-note-section .text-content {
     text-align: center;
     padding: 1rem; }
@@ -599,12 +615,10 @@ hr.bg-primary {
   .overview-brochure .content-box {
     padding-right: 30px; }
   .overview-brochure .heading {
-    font-family: 'Playfair Display', serif;
     font-size: 36px;
     font-weight: 700;
     color: #6b6a4d; }
   .overview-brochure .description {
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #4d4c3b;
     line-height: 1.6; }
@@ -641,17 +655,18 @@ hr.bg-primary {
 
 .project-section {
   background-color: #622d34;
-  color: #f3ded3; }
+  color: #f3ded3;
+  display: flex;
+  justify-content: end; }
   .project-section .section-title {
     color: #FFF; }
   .project-section .description {
     color: #c5818a; }
   .project-section .container-fluid {
-    width: 85%;
-    margin-right: unset; }
+    flex: 0 0 calc(100% - 60px); }
     @media (min-width: 769px) {
       .project-section .container-fluid {
-        width: 90%; } }
+        flex: 0 0 calc(100% - 250px); } }
     .project-section .container-fluid .highlights {
       display: flex;
       flex-wrap: wrap;
@@ -684,38 +699,62 @@ hr.bg-primary {
         .project-section .container-fluid ul li strong {
           color: #FFF; }
 
-#overview .scroll-container {
-  display: flex;
-  overflow-x: auto;
-  scrollbar-width: none;
-  align-items: center;
-  width: 90%; }
-  #overview .scroll-container a {
-    display: block;
-    flex: 0 0 85%;
-    width: 85%; }
-    #overview .scroll-container a + a {
-      margin-left: 0.5rem; }
-    #overview .scroll-container a img {
-      width: 90%;
-      height: 34vh;
-      /* width: 80vw; */
-      object-fit: cover; }
+#overview {
+  background-color: transparent; }
+  #overview h1 {
+    color: #144230; }
+  #overview .vertical-title-bar {
+    background-color: #18428F; }
+    #overview .vertical-title-bar h2 {
+      color: #FEFEFA; }
+  #overview .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    align-items: center;
+    width: 100%; }
+    #overview .scroll-container a {
+      display: block;
+      flex: 0 0 95%;
+      width: 95%; }
+      #overview .scroll-container a img {
+        width: 95%;
+        height: 50vh;
+        /* width: 80vw; */
+        object-fit: cover; }
 
-#amenities .highlight-item {
-  transition: background-color 0.3s ease-in-out;
-  padding: 1rem 0.5rem;
-  cursor: pointer; }
-  #amenities .highlight-item p {
-    margin: 0; }
-  #amenities .highlight-item:hover {
-    background-color: #c5818a; }
-  #amenities .highlight-item.active {
-    border: 1px solid #c5818a; }
+#amenities .nav-tabs {
+  border: 0; }
+  @media (min-width: 321px) and (max-width: 768px) {
+    #amenities .nav-tabs {
+      margin-bottom: 1rem; } }
+  #amenities .nav-tabs .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    color: #f3ded3;
+    border: none;
+    transition: all 0.3s ease-in-out; }
+    #amenities .nav-tabs .nav-link i {
+      color: #c5818a; }
+    #amenities .nav-tabs .nav-link.active {
+      background-color: transparent;
+      border-left: 4px solid #c5818a;
+      color: #c5818a;
+      font-weight: 600; }
+      #amenities .nav-tabs .nav-link.active i {
+        color: #c5818a; }
+    #amenities .nav-tabs .nav-link:hover {
+      background: rgba(197, 129, 138, 0.1); }
 
-#amenitiesCarousel img {
-  height: 80vh;
-  object-fit: cover; }
+#amenities .tab-content img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(254, 254, 250, 0.2); }
 
 #location {
   background-color: #144230; }

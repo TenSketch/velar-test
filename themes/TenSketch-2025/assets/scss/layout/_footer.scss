@@ -7,16 +7,16 @@
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 1rem;
-      color: $voyage-blue; // Voyage Blue
+      color: $clr-tertiary // Voyage Blue
     }
   
     .footer-link {
-      color: #555;
+      color: $clr-secondary;
       text-decoration: none;
       transition: color 0.3s ease;
   
       &:hover {
-        color: $voyage-blue; // Voyage Blue on hover
+        color: $clr-secondary--light; // Voyage Blue on hover
       }
     }
   
@@ -26,24 +26,24 @@
     }
   
     .form-control {
-      border: 2px solid #ccc;
+      border: 2px solid $clr-secondary;
       border-radius: 5px;
       transition: border-color 0.3s ease;
   
       &:focus {
-        border-color: $voyage-blue; // Voyage Blue
-        box-shadow: 0 0 5px rgba(24, 66, 143, 0.5);
+        // border-color: $; // Voyage Blue
+        box-shadow: 0 0 5px $clr-secondary--light;
       }
     }
   
     button.btn {
-      background-color: $voyage-blue;
-      color: #fff;
-      border: none;
+      background-color: transparent;
+      color: $clr-secondary;
+      border: 2px solid $clr-secondary;
       transition: background-color 0.3s ease;
   
       &:hover {
-        background-color: #1a4fa5;
+        background-color: $clr-secondary--light;
       }
     }
   

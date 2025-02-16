@@ -80,11 +80,14 @@ html {
 body {
   overflow-x: hidden;
   // padding-top: $navbar-height;
-  font-family: $font-secondary;
+  // font-family: $font-secondary;
+  font-family: $font-body;
   
 
 }
-
+p{
+  letter-spacing: 1.5px;
+}
 // body.scroll-locked {
 //   overflow: hidden;
 // }

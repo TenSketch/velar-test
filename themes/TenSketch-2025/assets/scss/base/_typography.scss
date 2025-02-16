@@ -1,21 +1,35 @@
 
 @font-face {
-    font-family: "Fontspring-DEMO-juanaalt-regular";
-    src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype") ;
+    font-family: "Adorage";
+    src: url("/fonts/Adorage.otf") format("opentype") ;
 }
+// AeonikTRIAL-Regular
+@font-face {
+  font-family: "AeonikTRIAL";
+  src: url("/fonts/AeonikTRIAL-Regular.otf") format("opentype");
 
+}
 
 // Define the font face mixin
 @mixin heading-font {
     @font-face {
-      font-family: "Fontspring-DEMO-juanaalt-regular";
-      src: url("/fonts/Fontspring-DEMO-juanaalt-regular.otf") format("opentype");
+      font-family: "Adorage";
+      src: url("/fonts/Adorage.otf") format("opentype");
+    }
+  }
+  // body font
+  @mixin body-font{
+    @font-face {
+      font-family: "AeonikTRIAL";
+      src: url("/fonts/AeonikTRIAL-Regular.otf") format("opentype");
+    
     }
   }
   
   // Use the mixin
   @include heading-font;
+  @include body-font;
   
   // Define the font family variable
-  $heading-font: "Fontspring-DEMO-juanaalt-regular";
+  $heading-font: "Adorage";
   

@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/home/</loc>
+    <loc>http://localhost:1313/home/hero/</loc>
     <lastmod>2025-01-19T16:40:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/home/hero/</loc>
+    <loc>http://localhost:1313/home/</loc>
     <lastmod>2025-01-19T16:40:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
@@ -20,9 +20,6 @@
     <loc>http://localhost:1313/home/slider/</loc>
     <lastmod>2025-01-19T16:25:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/home/overview/</loc>
-    <lastmod>2025-01-19T16:20:00+05:30</lastmod>
-  </url><url>
     <loc>http://localhost:1313/home/features/</loc>
     <lastmod>2025-01-19T12:40:00+05:30</lastmod>
   </url><url>
@@ -34,6 +31,9 @@
   </url><url>
     <loc>http://localhost:1313/home/location/</loc>
     <lastmod>2025-01-19T12:30:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/home/overview/</loc>
+    <lastmod>2025-01-19T12:29:00+05:30</lastmod>
   </url><url>
     <loc>http://localhost:1313/home/about/</loc>
     <lastmod>2025-01-19T11:40:00+05:30</lastmod>
