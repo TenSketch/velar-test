@@ -265,3 +265,30 @@
           });
         </script>
         
+
+
+        
+  {{ if eq .Params.layout "services" }}
+  <div class="services-page">
+    <section class="services-list">
+      <div class="container">
+        {{ range .Params.services }}
+        <div class="service-item">
+          <h2>{{ .title }}</h2>
+          {{ with .highlight }}
+          <p class="highlight">{{ . }}</p>
+          {{ end }}
+          <p>{{ .description }}</p>
+          {{ with .details }}
+          <ul>
+            {{ range . }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+{{ end }}
