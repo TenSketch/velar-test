@@ -292,3 +292,136 @@
     </section>
   </div>
 {{ end }}
+
+
+<!-- <div class="row">
+      <div class="col-md-12">
+        <div class="highlights d-flex flex-wrap">
+          <div class="highlight-item text-center" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-border-all fa-2x"></i>
+            <h4 class="section-title">Designer Tile DADO</h4>
+            <p class="description">2 feet height over the kitchen counter and 4 feet height in the utility area.</p>
+          </div>
+          <div class="highlight-item text-center" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-door-closed fa-2x"></i>
+            <h4 class="section-title">Main Door</h4>
+            <p class="description">Wooden door frame with a 40mm thick teak wood veneer shutter, polished on both sides.
+            </p>
+          </div>
+          <div class="highlight-item text-center" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-faucet fa-2x"></i>
+            <h4 class="section-title">Plumbing & Sanitary Fittings</h4>
+            <p class="description">CPVC concealed piping with luxury CP fittings and sanitaryware from Kohler, Roca, or
+              equivalent.</p>
+          </div>
+          <div class="highlight-item text-center" data-aos="fade-up" data-aos-delay="500">
+            <i class="fas fa-elevator fa-2x"></i>
+            <h4 class="section-title">Elevator</h4>
+            <p class="description">10-passenger capacity elevator (Johnson or equivalent) for smooth vertical transport.
+            </p>
+          </div>
+          <div class="highlight-item text-center" data-aos="fade-up" data-aos-delay="600">
+            <i class="fas fa-battery-full fa-2x"></i>
+            <h4 class="section-title">Power Backup</h4>
+            <p class="description">Supports 1 light and 1 fan in living, dining, and all bedrooms with a 2.5 KVA load
+              limiter, plus backup for the elevator and common lighting.</p>
+          </div>
+          <div class="highlight-item text-center" data-aos="fade-up" data-aos-delay="700">
+            <i class="fas fa-bolt fa-2x"></i>
+            <h4 class="section-title">Electrical</h4>
+            <p class="description">Concealed wiring with modular switches (Havells Crabtree or equivalent), 3-phase
+              supply with MCB & RCCB, telephone point in the living and master bedroom, and A/C provisions for all
+              bedrooms, living, and dining.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div> -->
+
+
+    <section id="location" class="project-section position-relative py-5 my-5">
+      <div class="vertical-title-bar">
+        <h2>L<br>O<br>C<br>A<br>T<br>I<br>O<br>N</h2>
+      </div>
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-md-10 mx-auto">
+            <div class="map-container text-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.4094157326062!2d77.03145287504636!3d11.082833289085197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA0JzU4LjIiTiA3N8KwMDInMDIuNSJF!5e0!3m2!1sen!2sin!4v1739106983938!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.4094157326062!2d77.03145287504636!3d11.082833289085197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDA0JzU4LjIiTiA3N8KwMDInMDIuNSJF!5e0!3m2!1sen!2sin!4v1739106983938!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="highlights d-flex flex-wrap">
+              <div class="highlight-item text-center">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Prime Location</p>
+              </div>
+              <div class="highlight-item text-center">
+                <i class="fas fa-road fa-2x"></i>
+                <p>Effortless Travel</p>
+              </div>
+              <div class="highlight-item text-center">
+                <i class="fas fa-university fa-2x"></i>
+                <p>Premier Educational Institutions</p>
+              </div>
+              <div class="highlight-item text-center">
+                <i class="fas fa-hospital fa-2x"></i>
+                <p>Top Healthcare Facilities</p>
+              </div>
+              <div class="highlight-item text-center">
+                <i class="fas fa-briefcase fa-2x"></i>
+                <p>Proximity to Business Hubs</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-6 mt-4 mt-md-0">
+            <h3 class="section-title mb-2">A Location That Keeps You Close To Everything, Yet Far From The Chaos</h3>
+            <p class="description mb-3">Urban Square places you exactly where you need to be—close to essentials yet nestled
+              in a peaceful retreat. Experience the perfect balance of convenience and calm, just the way it should be.</p>
+        
+            <h4 class="section-title mt-4">Effortless Travel</h4>
+            <ul>
+                <li class="description"><i class="fas fa-plane me-2"></i> 14 mins – Coimbatore International Airport</li>
+                <li class="description"><i class="fas fa-train me-2"></i> 30 mins – Coimbatore Railway Station</li>
+            </ul>
+        
+            <h4 class="section-title mt-4">Premier Schools & Colleges Nearby</h4>
+            <ul>
+                <li class="description"><i class="fas fa-school me-2"></i> 1 min – Aalam Montessori School</li>
+                <li class="description"><i class="fas fa-school me-2"></i> 8 mins – Reeds World School</li>
+                <li class="description"><i class="fas fa-school me-2"></i> 12 mins – RAK’s Pallikkoodam</li>
+                <li class="description"><i class="fas fa-graduation-cap me-2"></i> 20 mins – PSG College</li>
+                <li class="description"><i class="fas fa-university me-2"></i> 20 mins – Kumaraguru College</li>
+            </ul>
+        
+            <h4 class="section-title mt-4">Top Healthcare Within Reach</h4>
+            <ul>
+                <li class="description"><i class="fas fa-hospital-alt me-2"></i> 9 mins – Kovai Medical Center & Hospital</li>
+                <li class="description"><i class="fas fa-hospital me-2"></i> 22 mins – NG Hospital & Research Centre</li>
+                <li class="description"><i class="fas fa-clinic-medical me-2"></i> 31 mins – GEM Hospital Coimbatore</li>
+            </ul>
+        
+            <h4 class="section-title mt-4">Business & IT Hubs Close By</h4>
+            <ul>
+                <li class="description"><i class="fas fa-building me-2"></i> 3 mins – SVB Tech Park</li>
+                <li class="description"><i class="fas fa-building me-2"></i> 18 mins – Tidel Park</li>
+            </ul>
+        </div>
+        
+    
+    
+        </div>
+      </div>
+    </section>
