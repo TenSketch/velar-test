@@ -11,19 +11,13 @@ draft: false
 images:
   hero: "/images/urban-square-1.jpg"
   gallery:
-    - "/images/urban-square-2.jpg"
-    - "/images/urban-square-3.jpg"
-    - "/images/urban-square-4.jpg"
-    - "/images/urban-square-5.jpg"
-    - "/images/urban-square-6.jpg"
-    # - "/images/terrace-us-1.jpg"
-    # - "/images/terrace-us-2.jpg"
-    # - "/images/terrace-us-3.jpg"
-    # - "/images/terrace-us-4.jpg"
-    # - "/images/terrace-us-5.jpg"
-    # - "/images/terrace-us-6.jpg"
-    # - "/images/terrace-us-7.jpg"
-    # - "/images/terrace-us-8.jpg"
+    - "/images/urban-square-imgs-2026-apr/Render_Hand_Sketch.png"
+    - "/images/urban-square-imgs-2026-apr/Day_shot-1.jpg"
+    - "/images/urban-square-imgs-2026-apr/Day_shot-2.jpg"
+    - "/images/urban-square-imgs-2026-apr/Day_shot-3.jpg"
+    - "/images/urban-square-imgs-2026-apr/Night_shot-1.jpg"
+    - "/images/urban-square-imgs-2026-apr/Night_shot-2.jpg"
+    - "/images/urban-square-imgs-2026-apr/Night_shot-3.jpg"
 
 icons:
   - name: "Biophilic Appeal"

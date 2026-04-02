@@ -38,3 +38,9 @@ hr{
         bottom: -60px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 1.5rem;
+    }
+}

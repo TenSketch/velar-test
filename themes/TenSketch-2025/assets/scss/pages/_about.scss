@@ -6,9 +6,19 @@
 }
 
 .about-us {
-    padding: 50px;
+    // padding: 50px;
     text-align: center;
-    background-color: $voyage-blue;
+    background-color: transparent;
+
+    .about-us-inner {
+      padding-inline: clamp(1rem, 4vw, 4rem);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-inline: 1.5rem;
+      }
+    }
   }
   
   .roof-shape {
@@ -23,12 +33,12 @@
     margin-bottom: 50px;
   
     h2 {
-      color: $serene-sage;
+      color: $clr-primary;
       margin-bottom: 20px;
     }
   
     p, li {
-      color: $serene-sage;
+      color: rgba($clr-primary, 0.85);
     }
   }
   
@@ -42,7 +52,7 @@
   
   .card {
     background-color: transparent;
-    border: 2px solid $serene-sage;
+    border: 2px solid rgba($clr-primary, 0.25);
     @include border-radius;
     padding: 20px;
     // width: min(80%, );
@@ -51,24 +61,24 @@
     transition: all 0.3s ease;
   
     &:hover {
-      box-shadow: 0 0 10px $serene-sage, 0 0 20px $serene-sage;
+      box-shadow: 0 0 10px rgba($clr-primary, 0.18), 0 0 20px rgba($clr-primary, 0.12);
       transform: translateY(-5px);
     }
   
     .icon {
       font-size: 25px;
-      color: $serene-sage;
+      color: $clr-primary;
       margin-bottom: 15px;
     }
   
     h3 {
-      color: $serene-sage;
+      color: $clr-primary;
       margin-bottom: 10px;
       font-size: 1.3rem;
     }
   
     p {
-      color: $serene-sage;
+      color: rgba($clr-primary, 0.85);
       font-size: 0.9rem;
     }
   }
@@ -81,7 +91,7 @@
   }
   
   .team-member {
-    border: 2px solid $serene-sage;
+    border: 2px solid rgba($clr-primary, 0.25);
     border-radius: 10px;
     padding: 20px;
     // width: 300px;
@@ -91,11 +101,15 @@
     overflow: hidden;
   
     &:hover {
-      box-shadow: 0 0 10px $serene-sage, 0 0 20px $serene-sage;
+      box-shadow: 0 0 10px rgba($clr-primary, 0.18), 0 0 20px rgba($clr-primary, 0.12);
     }
   
     h3, p {
-      color: $serene-sage;
+      color: rgba($clr-primary, 0.85);
+    }
+
+    h3 {
+      color: $clr-primary;
     }
   }
   

@@ -7,6 +7,9 @@
       loaderOverlay.style.opacity = "0";
       loaderOverlay.style.pointerEvents = "none";
     }, 2e3);
+    if (window.Fancybox) {
+      Fancybox.bind("[data-fancybox]", {});
+    }
   });
   document.addEventListener("scroll", function() {
     const navbar = document.querySelector(".navbar");

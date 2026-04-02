@@ -5,52 +5,56 @@
     <h2 class="display-3 text-white">About Velar</h2>
     </div>
   </section>
-  <div class="about-us">
-    <!-- <div class="roof-shape" data-aos="fade-down">
-      <img src="/path/to/roof-image.png" alt="Roof Shape" />
-    </div> -->
-    {{ range .Params.sections }}
-    <section class="section" data-aos="fade-up" data-aos-delay="{{ .Params.delay }}">
-      <h2>{{ .title }}</h2>
-      {{ if .content }}
-        <p>{{ .content }}</p>
-      {{ end }}
-      {{ if .steps }}
-      <ul class="list-unstyled">
-        {{ range .steps }}
-        <li>{{ . }}</li>
-        {{ end }}
-      </ul>
-      {{ end }}
-      {{ if .cards }}
-      <div class="card-container gap-3">
-        {{ range .cards }}
-        <div class="card col-md-5 " data-aos="flip-left" data-aos-delay="{{ .Params.delay }}">
-          <div class="icon">
-            <i class="{{ .icon }}"></i>
+  <div class="about-us py-5">
+    <div class="container">
+      <div class="about-us-inner">
+        <!-- <div class="roof-shape" data-aos="fade-down">
+          <img src="/path/to/roof-image.png" alt="Roof Shape" />
+        </div> -->
+        {{ range .Params.sections }}
+        <section class="section" data-aos="fade-up" data-aos-delay="{{ .Params.delay }}">
+          <h2>{{ .title }}</h2>
+          {{ if .content }}
+            <p class="col-md-8 mx-auto">{{ .content }}</p>
+          {{ end }}
+          {{ if .steps }}
+          <ul class="list-unstyled col-md-8 mx-auto">
+            {{ range .steps }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+          {{ if .cards }}
+          <div class="card-container gap-3">
+            {{ range .cards }}
+            <div class="card col-md-5 " data-aos="flip-left" data-aos-delay="{{ .Params.delay }}">
+              <div class="icon">
+                <i class="{{ .icon }}"></i>
+              </div>
+              <div class="card-content">
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+              </div>
+            </div>
+            {{ end }}
           </div>
-          <div class="card-content">
-            <h3>{{ .title }}</h3>
-            <p>{{ .description }}</p>
+          {{ end }}
+          {{ if .members }}
+          <div class="team-container gap-4">
+            {{ range .members }}
+            <div class="team-member col-md-5" data-aos="zoom-in" data-aos-delay="{{ .Params.delay }}">
+              <img src="{{ .image }}" alt="{{ .name }}" />
+              <h3 class="mt-3">{{ .name }}</h3>
+              <p><strong>{{ .role }}</strong></p>
+              <p>{{ .description }}</p>
+            </div>
+            {{ end }}
           </div>
-        </div>
+          {{ end }}
+        </section>
         {{ end }}
       </div>
-      {{ end }}
-      {{ if .members }}
-      <div class="team-container gap-4">
-        {{ range .members }}
-        <div class="team-member col-md-5" data-aos="zoom-in" data-aos-delay="{{ .Params.delay }}">
-          <img src="{{ .image }}" alt="{{ .name }}" />
-          <h3 class="mt-3">{{ .name }}</h3>
-          <p><strong>{{ .role }}</strong></p>
-          <p>{{ .description }}</p>
-        </div>
-        {{ end }}
-      </div>
-      {{ end }}
-    </section>
-    {{ end }}
+    </div>
   </div>
   
   

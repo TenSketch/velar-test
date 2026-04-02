@@ -31,9 +31,13 @@ instagram = 'https://instagram.com/velar_infra'
     url = "/about-us"
     weight = 2
   [[menu.main]]
+    name = "Gallery"
+    url = "/#gallery"
+    weight = 3
+  [[menu.main]]
     name = "Contact Us"
     url = "#contact-us"
-    weight = 3
+    weight = 4
 
 
   [[menu.footer]]

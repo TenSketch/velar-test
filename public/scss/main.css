@@ -30,6 +30,10 @@ hr.bg-primary {
   @media (min-width: 769px) {
     .wave-bg {
       bottom: -60px; } }
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1.5rem; } }
+
 @font-face {
   font-family: "Adorage";
   src: url("/fonts/Adorage.otf") format("opentype"); }
@@ -78,6 +82,10 @@ hr.bg-primary {
   @media (min-width: 769px) {
     .wave-bg {
       bottom: -60px; } }
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1.5rem; } }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem; }
@@ -349,6 +357,10 @@ hr.bg-primary {
   @media (min-width: 769px) {
     .wave-bg {
       bottom: -60px; } }
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1.5rem; } }
+
 .slider {
   position: relative;
   height: 90vh;
@@ -480,66 +492,47 @@ hr.bg-primary {
 
 .design-note-section {
   padding: 3rem 1rem;
-  background: #86815b;
-  color: #f3ded3; }
+  background: transparent;
+  color: #144230; }
   .design-note-section h1,
   .design-note-section h4 {
-    color: #FEFEFA; }
+    color: #144230; }
   .design-note-section .text-content {
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    position: relative; }
     .design-note-section .text-content .section-title {
-      line-height: 1.4; }
+      line-height: 1.4;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      max-width: 900px;
+      margin: 0 auto; }
     .design-note-section .text-content .architect-name {
-      margin-top: 0.5rem; }
-    .design-note-section .text-content .sketches {
-      overflow-x: auto;
+      margin-top: 2rem;
+      text-align: right;
+      font-size: 1rem;
+      line-height: 1.5;
+      width: fit-content;
+      margin-left: auto; }
+      .design-note-section .text-content .architect-name .highlight {
+        font-style: italic; }
+    .design-note-section .text-content .feature-image {
       display: flex;
-      scrollbar-width: none;
-      align-items: center;
-      position: relative;
-      gap: 1rem; }
-      .design-note-section .text-content .sketches .img-container {
-        flex: 1 0 40%; }
-        @media (min-width: 321px) and (max-width: 768px) {
-          .design-note-section .text-content .sketches .img-container {
-            flex: 1 0 80%; } }
-        .design-note-section .text-content .sketches .img-container img {
-          border: 2px solid #f3ded3; }
+      justify-content: center; }
+      .design-note-section .text-content .feature-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-inline: auto; }
     .design-note-section .text-content .description {
-      color: #f3ded3;
+      color: #144230;
       line-height: 1.6;
-      margin-top: 1rem; }
-  .design-note-section .image-container {
-    position: relative;
-    text-align: center; }
-    .design-note-section .image-container img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover; }
-    .design-note-section .image-container .image-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 12px; }
-  @media (min-width: 768px) {
-    .design-note-section .text-content {
-      text-align: left;
-      padding-right: 3rem; }
-    .design-note-section .image-container {
-      text-align: right; } }
+      margin-top: 1rem;
+      text-align: center;
+      max-width: 340px; }
   .design-note-section .bottom-content .description {
     border-radius: 5px;
-    border: 2px solid #f3ded3; }
-    @media (min-width: 769px) {
-      .design-note-section .bottom-content .description {
-        border: none; } }
-  @media (max-width: 768px) {
-    .design-note-section .bottom-content {
-      overflow-x: scroll; } }
+    border: none; }
+
 .urban_square-intro {
   background-color: #D0E8E4;
   position: relative;
@@ -606,7 +599,7 @@ hr.bg-primary {
       .urban_square-intro .container {
         max-width: 900px; } }
 .overview-brochure {
-  background-color: #f3ded3;
+  background-color: transparent;
   padding: 80px 0; }
   .overview-brochure .content-box {
     padding-right: 30px; }
@@ -621,6 +614,65 @@ hr.bg-primary {
   .overview-brochure .building-image {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
+
+.bento-gallery-section {
+  background: transparent;
+  color: #144230;
+  display: flex;
+  justify-content: end; }
+  .bento-gallery-section .vertical-title-bar {
+    background: #144230; }
+    .bento-gallery-section .vertical-title-bar h2 {
+      color: #D0E8E4; }
+  .bento-gallery-section h1,
+  .bento-gallery-section p {
+    color: #144230; }
+  .bento-gallery-section .bento-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 180px;
+    gap: 1rem; }
+    @media (max-width: 768px) {
+      .bento-gallery-section .bento-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: 140px; } }
+  .bento-gallery-section .bento-item {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px; }
+    .bento-gallery-section .bento-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease; }
+    .bento-gallery-section .bento-item:hover img {
+      transform: scale(1.04); }
+    .bento-gallery-section .bento-item:nth-child(1) {
+      grid-column: span 2;
+      grid-row: span 2; }
+    .bento-gallery-section .bento-item:nth-child(4) {
+      grid-column: span 2; }
+    .bento-gallery-section .bento-item:nth-child(7) {
+      grid-row: span 2; }
+    .bento-gallery-section .bento-item:nth-child(10) {
+      grid-column: span 2; }
+    @media (max-width: 768px) {
+      .bento-gallery-section .bento-item:nth-child(1), .bento-gallery-section .bento-item:nth-child(4), .bento-gallery-section .bento-item:nth-child(10) {
+        grid-column: span 2; }
+      .bento-gallery-section .bento-item:nth-child(7) {
+        grid-row: span 1; } }
+.gallery-section {
+  background: transparent; }
+  .gallery-section .section-title,
+  .gallery-section h1,
+  .gallery-section h2,
+  .gallery-section h3,
+  .gallery-section h4,
+  .gallery-section h5,
+  .gallery-section h6,
+  .gallery-section p,
+  .gallery-section a {
+    color: #144230; }
 
 @media (max-width: 768px) {
   .urban-square-section {
@@ -912,10 +964,10 @@ hr.bg-primary {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
 
 .projects {
-  background-color: #86815b;
-  color: #FEFEFA !important; }
+  background-color: transparent;
+  color: #144230 !important; }
   .projects h2 {
-    color: #FEFEFA !important; }
+    color: #144230 !important; }
   .projects .col-custom {
     flex: 0 0 90%;
     margin-top: 2rem; }
@@ -923,7 +975,7 @@ hr.bg-primary {
       .projects .col-custom {
         flex: 0 0 30%; } }
   .projects .project-card {
-    background-color: #86815b;
+    background-color: transparent;
     border-radius: 5px;
     transition: transform 0.3s ease; }
     .projects .project-card:hover {
@@ -935,9 +987,11 @@ hr.bg-primary {
       padding: 1rem; }
       .projects .project-card .card-body h5 {
         font-size: 1.25rem;
-        margin-bottom: 0.5rem; }
+        margin-bottom: 0.5rem;
+        color: #144230; }
       .projects .project-card .card-body p {
-        font-size: 0.875rem; }
+        font-size: 0.875rem;
+        color: rgba(20, 66, 48, 0.75); }
 
 .cta-section {
   background: linear-gradient(135deg, #18428F, #4A90E2);
@@ -1008,10 +1062,13 @@ hr.bg-primary {
   min-height: 50vh; }
 
 .about-us {
-  padding: 50px;
   text-align: center;
-  background-color: #18428F; }
-
+  background-color: transparent; }
+  .about-us .about-us-inner {
+    padding-inline: clamp(1rem, 4vw, 4rem); }
+  @media (max-width: 768px) {
+    .about-us .container {
+      padding-inline: 1.5rem; } }
 .roof-shape {
   margin-bottom: 20px; }
   .roof-shape img {
@@ -1020,10 +1077,10 @@ hr.bg-primary {
 .section {
   margin-bottom: 50px; }
   .section h2 {
-    color: #BCC4B2;
+    color: #144230;
     margin-bottom: 20px; }
   .section p, .section li {
-    color: #BCC4B2; }
+    color: rgba(20, 66, 48, 0.85); }
 
 .card-container {
   display: flex;
@@ -1032,25 +1089,25 @@ hr.bg-primary {
 
 .card {
   background-color: transparent;
-  border: 2px solid #BCC4B2;
+  border: 2px solid rgba(20, 66, 48, 0.25);
   border-radius: 5px;
   padding: 20px;
   text-align: center;
   position: relative;
   transition: all 0.3s ease; }
   .card:hover {
-    box-shadow: 0 0 10px #BCC4B2, 0 0 20px #BCC4B2;
+    box-shadow: 0 0 10px rgba(20, 66, 48, 0.18), 0 0 20px rgba(20, 66, 48, 0.12);
     transform: translateY(-5px); }
   .card .icon {
     font-size: 25px;
-    color: #BCC4B2;
+    color: #144230;
     margin-bottom: 15px; }
   .card h3 {
-    color: #BCC4B2;
+    color: #144230;
     margin-bottom: 10px;
     font-size: 1.3rem; }
   .card p {
-    color: #BCC4B2;
+    color: rgba(20, 66, 48, 0.85);
     font-size: 0.9rem; }
 
 .team-container {
@@ -1059,7 +1116,7 @@ hr.bg-primary {
   justify-content: center; }
 
 .team-member {
-  border: 2px solid #BCC4B2;
+  border: 2px solid rgba(20, 66, 48, 0.25);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
@@ -1067,9 +1124,11 @@ hr.bg-primary {
   transition: all 0.3s ease;
   overflow: hidden; }
   .team-member:hover {
-    box-shadow: 0 0 10px #BCC4B2, 0 0 20px #BCC4B2; }
+    box-shadow: 0 0 10px rgba(20, 66, 48, 0.18), 0 0 20px rgba(20, 66, 48, 0.12); }
   .team-member h3, .team-member p {
-    color: #BCC4B2; }
+    color: rgba(20, 66, 48, 0.85); }
+  .team-member h3 {
+    color: #144230; }
 
 .text-primary {
   color: #18428F !important; }
@@ -1103,6 +1162,10 @@ hr.bg-primary {
   @media (min-width: 769px) {
     .wave-bg {
       bottom: -60px; } }
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1.5rem; } }
+
 .page-title {
   min-height: 50vh;
   background-image: url(/images/akf_flag.jpg);

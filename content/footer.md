@@ -13,11 +13,11 @@ quick_links:
   # - name: "Contact Us"
   #   url: "/contact"
 contact:
-  address: "12A/31, Viswanathapuram 3rd Street, Kodambakkam, Chennai - 600024"
+  address: "127, Thriveni West Road, Kalapatti, Coimbatore 641 048"
 #   landmark: "Adjacent to 20 feet Sacred Heart Jesus Christ Statue & Egmore Police Museum."
   email: "info@velarinfra.com"
-  phone: "+919884077144"
-  whatsapp: "+919884077144"
+  phone: "+91 91760 91740"
+  whatsapp: "919176091740"
 social_links:
   # - platform: "Facebook"
   #   url: "https://facebook.com"

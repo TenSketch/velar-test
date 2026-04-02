@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     loaderOverlay.style.opacity = "0";
     loaderOverlay.style.pointerEvents = "none";
   }, 2000); // Matches the logo-slide animation timing
+
+  if (window.Fancybox) {
+    Fancybox.bind("[data-fancybox]", {});
+  }
 });
 
 document.addEventListener('scroll', function () {

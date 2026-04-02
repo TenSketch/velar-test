@@ -134,7 +134,7 @@
           </div>
           <div class="col-md-9 mt-3 mt-md-0">
             <h4 class=" fw-semibold">Dwelling Details</h4>
-            <p class="mb-0">10.8 Grounds</p>
+            <p class="mb-0">60 Cents</p>
             <p class="mb-0">Total Number of Units – 40 Exclusive Residences</p>
             <p class="mb-0">2 & 3 BHK Homes – 20 Units each</p>
           </div>
@@ -154,8 +154,8 @@
             <!-- <p class="mb-0">40 Units</p>
             <p class="mb-0">(20 2BHK & 20 3BHK)</p> -->
             <p class="mb-0">Units Per Floor – 8 Residences</p>
-            <p class="mb-0">3BHK Sizes: 2,251 – 2,311 Sq. Ft.</p>
-            <p class="mb-0">2BHK Sizes: 1,233 – 1,287 Sq. Ft.</p>
+            <p class="mb-0">3BHK Sizes: 2200-2260 Sqft</p>
+            <p class="mb-0">2BHK Sizes: 1270 Sqft</p>
           </div>
         </div>
       </div>
@@ -182,75 +182,21 @@
     <hr>
     <div class="row align-items-center">
       <div class="col-md-10 mx-auto text-content" data-aos="fade-up" data-aos-delay="100">
-        <h4 class="section-title" data-aos="fade-up" data-aos-delay="200">
-          We Believe In Spaces That Speak To Your Soul.
-        </h4>
-        <h6 class="architect-name" data-aos="fade-up" data-aos-delay="300">
-          Ar. Pradeep Arumugam<br>Principal Architect<br>
-          <span class="highlight">w.a.r.p</span>
-        </h6>
-        <!-- <div class="image-container"> -->
-        <div class="sketches my-5">
-          <div class="img-container">
-            <a href="/images/Urban_Square-sketch-warp-1.png" data-fancybox="sketch-gallery" data-caption="Sketch 1">
-              <img src="/images/Urban_Square-sketch-warp-1.png" alt="Sketch 1">
-            </a>
-          </div>
-          <div class="img-container">
-            <a href="/images/Urban_Square-sketch-warp-2.png" data-fancybox="sketch-gallery" data-caption="Sketch 2">
-              <img src="/images/Urban_Square-sketch-warp-2.png" alt="Sketch 2">
-            </a>
-          </div>
-          <div class="img-container">
-            <a href="/images/Urban_Square-sketch-warp-3.png" data-fancybox="sketch-gallery" data-caption="Sketch 3">
-              <img src="/images/Urban_Square-sketch-warp-3.png" alt="Sketch 3">
-            </a>
-          </div>
-          <div class="img-container">
-            <a href="/images/Urban_Square-sketch-warp-4.png" data-fancybox="sketch-gallery" data-caption="Sketch 4">
-              <img src="/images/Urban_Square-sketch-warp-4.png" alt="Sketch 4">
-            </a>
-          </div>
-          <div class="img-container">
-            <a href="/images/Urban_Square-sketch-warp-5.png" data-fancybox="sketch-gallery" data-caption="Sketch 5">
-              <img src="/images/Urban_Square-sketch-warp-5.png" alt="Sketch 5">
-            </a>
-          </div>
-          <div class="img-container">
-            <a href="/images/Urban_Square-sketch-warp-6.png" data-fancybox="sketch-gallery" data-caption="Sketch 6">
-              <img src="/images/Urban_Square-sketch-warp-6.png" alt="Sketch 6">
-            </a>
-          </div>
+        <h4 class="section-title" data-aos="fade-up" data-aos-delay="200">{{ .Params.design_note.title }}</h4>
+        <div class="feature-image my-5" data-aos="fade-up" data-aos-delay="300">
+          <img src="{{ .Params.images.feature }}" alt="Urban Square wall render">
         </div>
-
-
-
-        <!-- </div> -->
-        <!-- <img src="/images/URBAN-SQUARE-WARP-SKETCH.png" 
-             alt="Sketch of urban_square by warp architects" 
-             data-aos="fade-up" data-aos-delay="400"> -->
-        <div class="bottom-content d-flex gap-3 justify-content-between ">
-          <p class="col-10 col-md-3 description" data-aos="fade-up" data-aos-delay="500">
-            Urban Square is all about clean lines, soft curves, and cascading greenery—minimal, elegant, and inviting.
-            Floor-to-ceiling windows let the light pour in, framing calming views of the lush outdoors, while the greenery
-            woven into the balconies brings nature right to your doorstep.
-          </p>
-          <p class="col-10 col-md-3 description" data-aos="fade-up" data-aos-delay="600">
-            At its core, a beautifully designed central
-            couryard and a striking double-height
-            atrium keep the space open, airy, and alive.
-            It’s not just about aesthetics—it’s about
-            creating a home that feels connected,
-            breathable, and full of life.
-          </p>
-          <p class="col-10 col-md-3 description" data-aos="fade-up" data-aos-delay="700">
-            Every home is designed with both function
-            and privacy in mind—no shared walls, just
-            open, flowing spaces that feel like yours
-            alone. It’s a thoughtul blend of design and
-            comfor , making every inch feel intentional,
-            elegant, and made for the way you live.
-          </p>
+        <div class="bottom-content row justify-content-center g-4">
+          {{ range $index, $item := .Params.design_note.descriptions }}
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <p class="description" data-aos="fade-up" data-aos-delay="{{ add 500 (mul $index 100) }}">{{ $item }}</p>
+          </div>
+          {{ end }}
+        </div>
+        <div class="architect-name" data-aos="fade-up" data-aos-delay="800">
+          <span>{{ .Params.design_note.signature_name }}</span><br>
+          <span>{{ .Params.design_note.signature_role }}</span><br>
+          <span class="highlight">{{ .Params.design_note.signature_brand }}</span>
         </div>
       </div>
     </div>
@@ -346,6 +292,29 @@
 {{ end }}
 
 {{ if eq $section "specs" }}
+{{ $galleryPage := .Site.GetPage "home/gallery.md" }}
+{{ if $galleryPage }}
+<section id="gallery" class="gallery-section bento-gallery-section position-relative py-5 my-5">
+  <div class="vertical-title-bar">
+    <h2>G<br>A<br>L<br>L<br>E<br>R<br>Y</h2>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 mx-auto text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+        <h1 class="fw-bold">{{ $galleryPage.Params.heading }}</h1>
+        <p class="mt-3">{{ $galleryPage.Params.description }}</p>
+      </div>
+    </div>
+    <div class="bento-gallery-grid">
+      {{ range $galleryPage.Params.gallery }}
+      <a href="{{ .image }}" data-fancybox="immersive-gallery" data-caption="{{ .caption }}" class="bento-item">
+        <img src="{{ .image }}" alt="{{ .name }}" class="img-fluid">
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 <section id="specifications" class="project-section position-relative py-5 my-5">
   <div class="vertical-title-bar" data-aos="fade-up" data-aos-delay="100">
     <h2>S<br>P<br>E<br>C<br>I<br>F<br>I<br>C<br>A<br>T<br>I<br>O<br>N<br>S</h2>
@@ -475,53 +444,21 @@
   </div>
   <div class="container-fluid">
     <ul class="nav nav-tabs justify-content-between" id="amenitiesTabs" role="tablist">
+      {{ range $index, $item := .Params.amenities_tabs }}
       <li class="nav-item">
-        <a class="nav-link active" id="kids-tab" data-bs-toggle="tab" href="#kids" role="tab"> 
-          <i class="fas fa-child fa-2x"></i>
-          <p>Kids Play Area</p>
+        <a class="nav-link {{ if eq $index 0 }}active{{ end }}" id="{{ $item.id }}-tab" data-bs-toggle="tab" href="#{{ $item.id }}" role="tab">
+          <i class="{{ $item.icon }} fa-2x"></i>
+          <p>{{ $item.name }}</p>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" id="landscape-tab" data-bs-toggle="tab" href="#landscape" role="tab">
-          <i class="fas fa-tree fa-2x"></i>
-          <p>Landscaped Surroundings</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="gym-tab" data-bs-toggle="tab" href="#gym" role="tab">
-          <i class="fas fa-dumbbell fa-2x"></i>
-          <p>Fully Equipped Gym</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="yoga-tab" data-bs-toggle="tab" href="#yoga" role="tab">
-          <i class="fas fa-spa fa-2x"></i>
-          <p>Yoga / Meditation Room</p>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="hall-tab" data-bs-toggle="tab" href="#hall" role="tab">
-          <i class="fas fa-building fa-2x"></i>
-          <p>Multipurpose Hall</p>
-        </a>
-      </li>
+      {{ end }}
     </ul>
     <div class="tab-content" id="amenitiesContent">
-      <div class="tab-pane fade show active" id="kids" role="tabpanel">
-        <img src="/images/kids-play-area.jpg" class="img-fluid rounded shadow-sm" alt="Kids Play Area">
+      {{ range $index, $item := .Params.amenities_tabs }}
+      <div class="tab-pane fade {{ if eq $index 0 }}show active{{ end }}" id="{{ $item.id }}" role="tabpanel">
+        <img src="{{ $item.image }}" class="img-fluid rounded shadow-sm" alt="{{ $item.name }}">
       </div>
-      <div class="tab-pane fade" id="landscape" role="tabpanel">
-        <img src="/images/landscaped-surroundings.jpg" class="img-fluid rounded shadow-sm" alt="Landscaped Surroundings">
-      </div>
-      <div class="tab-pane fade" id="gym" role="tabpanel">
-        <img src="/images/gym.jpg" class="img-fluid rounded shadow-sm" alt="Fully Equipped Gym">
-      </div>
-      <div class="tab-pane fade" id="yoga" role="tabpanel">
-        <img src="/images/yoga-room.jpg" class="img-fluid rounded shadow-sm" alt="Yoga / Meditation Room">
-      </div>
-      <div class="tab-pane fade" id="hall" role="tabpanel">
-        <img src="/images/multipurpose-hall.jpg" class="img-fluid rounded shadow-sm" alt="Multipurpose Hall">
-      </div>
+      {{ end }}
     </div>
     <div class="row d-none">
       <!-- Navigation Tabs -->
@@ -657,7 +594,7 @@ updateSlide(0);
 {{ if eq $section "overview" }}
 <section id="overview" class="project-section position-relative py-5 my-5">
   <div class="vertical-title-bar" >
-    <h2>G<br>A<br>L<br>L<br>E<br>R<br>Y</h2>
+    <h2>R<br>E<br>N<br>D<br>E<br>R<br>S</h2>
   </div>
   <div class="container-fluid">
     <h1 class="display-5 text-center mb-4" data-aos="fade-up">Urban Square Elevation renders</h1>
