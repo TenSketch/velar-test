@@ -10,21 +10,6 @@ sections:
 
       A wholly-owned unit of KPM Constructions, with over three decades of expertise in construction and interiors across Chennai, Bangalore, and Hyderabad, Velar Infra is the product of 40 years of experience. Our mission is to make homes and construction dreams a reality.
 
-      With vast experience in home interiors, we provide end-to-end solutions from conceptualization and design to manufacturing and installation, all managed by our expert professionals.
-
-      Our state-of-the-art manufacturing facility is located in Thirumazhisai, Chennai.
-
-  - title: "Factory Infrastructure"
-    content: >
-      Our advanced manufacturing facility is equipped to handle over 100 engineered wooden panels (Plywood, MDF, HDF) daily, offering a variety of finishing options, including laminate, acrylic, PU, foil, and veneers.
-
-  - title: "Manufacturing Process"
-    steps:
-      - "Laminate pasting using Hot Press / Cold Press Machines."
-      - "Cutting using Beam Saw Machines."
-      - "Fixing Edge Band using Edge Bander Machines."
-      - "Drilling/Routing of panels using CNC Router Machines."
-
   # - title: "Our USP"
   #   cards:
   #     - title: "Quality"
