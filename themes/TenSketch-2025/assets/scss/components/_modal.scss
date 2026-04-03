@@ -1,0 +1,71 @@
+.brochure-modal {
+  .modal-dialog {
+    max-width: 520px;
+  }
+
+  .modal-content {
+    border: 0;
+    @include border-radius;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    background: $snow-white;
+  }
+
+  .modal-header,
+  .modal-body {
+    padding-inline: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .modal-header {
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .modal-title {
+    color: $clr-primary;
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+  }
+
+  .brochure-modal-eyebrow {
+    color: rgba($clr-primary, 0.7);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .form-label {
+    color: $clr-primary;
+    font-weight: 600;
+  }
+
+  .form-control {
+    min-height: 52px;
+    border: 1px solid rgba($clr-primary, 0.2);
+    @include border-radius;
+
+    &:focus {
+      border-color: rgba($clr-primary, 0.6);
+      box-shadow: 0 0 0 0.2rem rgba($clr-primary, 0.12);
+    }
+  }
+
+  .brochure-submit[disabled] {
+    opacity: 0.8;
+    cursor: wait;
+  }
+
+  .brochure-helper {
+    text-align: center;
+    color: $clr-primary;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .brochure-trust {
+    text-align: center;
+    color: rgba($clr-primary, 0.72);
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+  }
+}

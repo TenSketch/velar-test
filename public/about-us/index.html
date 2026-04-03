@@ -28,7 +28,7 @@
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
-      <link rel="stylesheet" href="/scss/main.min.f141a552d1b0a7d0612460a82eb0cd61437c6f4c4583297111e08037afef914e.css" integrity="sha256-8UGlUtGwp9BhJGCoLrDNYUN8b0xFgylxEeCAN6/vkU4=" crossorigin="anonymous">
+      <link rel="stylesheet" href="/scss/main.min.1bb055a81e2a52d33c6fe0b284e86fadf7f719040db3246b078a0b106510935f.css" integrity="sha256-G7BVqB4qUtM8b&#43;CyhOhvrff3GQQNsyRrB4oLEGUQk18=" crossorigin="anonymous">
 
 
 </head>
@@ -172,6 +172,72 @@ A wholly-owned unit of KPM Constructions, with over three decades of expertise i
 
 </main>
   
+  
+
+
+  
+
+
+
+<div
+  class="modal fade brochure-modal"
+  id="brochureModal"
+  tabindex="-1"
+  aria-labelledby="brochureModalLabel"
+  aria-hidden="true"
+  data-whatsapp-number="919176091740"
+  data-brochure-url="/pdf/VELAR-Urban_Square-brochure-new.pdf"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <div>
+          <p class="brochure-modal-eyebrow mb-2">Velar Brochure</p>
+          <h5 class="modal-title" id="brochureModalLabel">Download Brochure</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <form
+          id="brochureForm"
+          class="brochure-form"
+          name="brochure"
+          method="POST"
+          data-netlify="true"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="brochure">
+          <div class="mb-3">
+            <label class="form-label" for="brochureName">Name</label>
+            <input type="text" class="form-control" id="brochureName" name="name" required autocomplete="name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="brochureMobile">Mobile Number</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="brochureMobile"
+              name="mobile"
+              inputmode="numeric"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              minlength="10"
+              required
+              autocomplete="tel"
+            >
+            <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
+          </div>
+          <button type="submit" class="btn btn-voyage-blue w-100 brochure-submit">
+            <span class="brochure-submit-label">Download Brochure</span>
+          </button>
+          <p class="brochure-helper mb-0 mt-3">Get instant brochure + project details</p>
+          <p class="brochure-trust mb-0 mt-2">No spam. Only project details.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
   <footer id="contact-us" class="footer py-5">
   
   
@@ -288,6 +354,7 @@ A wholly-owned unit of KPM Constructions, with over three decades of expertise i
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
       <script src="/js/main.c572139968a29f99248f7acf434464ffb482c8f9b960c708145244417562c805.js" integrity="sha256-xXITmWiin5kkj3rPQ0Rk/7SCyPm5YMcIFFJEQXViyAU=" crossorigin="anonymous"></script>
 
+  <script src="/js/brochure.js" defer></script>
 
 </body>
 

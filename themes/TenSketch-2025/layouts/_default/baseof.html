@@ -17,8 +17,10 @@
   
   {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
+  {{ partial "brochure-form.html" . }}
   {{ partial "footer.html" . }}
   {{ partialCached "head/js.html" . }}
+  <script src="/js/brochure.js" defer></script>
 
 </body>
 

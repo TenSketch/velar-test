@@ -325,6 +325,63 @@ img {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem; }
 
+.brochure-modal .modal-dialog {
+  max-width: 520px; }
+
+.brochure-modal .modal-content {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  background: #FEFEFA; }
+
+.brochure-modal .modal-header,
+.brochure-modal .modal-body {
+  padding-inline: clamp(1.25rem, 3vw, 2rem); }
+
+.brochure-modal .modal-header {
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  align-items: flex-start; }
+
+.brochure-modal .modal-title {
+  color: #144230;
+  font-size: clamp(1.5rem, 2.4vw, 2rem); }
+
+.brochure-modal .brochure-modal-eyebrow {
+  color: rgba(20, 66, 48, 0.7);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase; }
+
+.brochure-modal .form-label {
+  color: #144230;
+  font-weight: 600; }
+
+.brochure-modal .form-control {
+  min-height: 52px;
+  border: 1px solid rgba(20, 66, 48, 0.2);
+  border-radius: 5px; }
+  .brochure-modal .form-control:focus {
+    border-color: rgba(20, 66, 48, 0.6);
+    box-shadow: 0 0 0 0.2rem rgba(20, 66, 48, 0.12); }
+
+.brochure-modal .brochure-submit[disabled] {
+  opacity: 0.8;
+  cursor: wait; }
+
+.brochure-modal .brochure-helper {
+  text-align: center;
+  color: #144230;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em; }
+
+.brochure-modal .brochure-trust {
+  text-align: center;
+  color: rgba(20, 66, 48, 0.72);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em; }
+
 .text-primary {
   color: #18428F !important; }
 
