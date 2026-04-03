@@ -131,19 +131,12 @@
   
 
 
-  
 
 
 
-<div
-  class="modal fade brochure-modal"
-  id="brochureModal"
-  tabindex="-1"
-  aria-labelledby="brochureModalLabel"
-  aria-hidden="true"
-  data-whatsapp-number="919176091740"
-  data-brochure-url="/pdf/VELAR-Urban_Square-brochure-new.pdf"
->
+
+<div class="modal fade brochure-modal" id="brochureModal" tabindex="-1" aria-labelledby="brochureModalLabel"
+  aria-hidden="true" data-whatsapp-number="919176091740" data-brochure-url="/pdf/VELAR-Urban_Square-brochure-new.pdf">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header border-0">
@@ -154,14 +147,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body pt-0">
-        <form
-          id="brochureForm"
-          class="brochure-form"
-          name="brochure"
-          method="POST"
-          data-netlify="true"
-          novalidate
-        >
+        <form id="brochureForm" class="brochure-form" name="brochure" method="POST" netlify>
           <input type="hidden" name="form-name" value="brochure">
           <div class="mb-3">
             <label class="form-label" for="brochureName">Name</label>
@@ -169,18 +155,8 @@
           </div>
           <div class="mb-3">
             <label class="form-label" for="brochureMobile">Mobile Number</label>
-            <input
-              type="tel"
-              class="form-control"
-              id="brochureMobile"
-              name="mobile"
-              inputmode="numeric"
-              pattern="[0-9]{10}"
-              maxlength="10"
-              minlength="10"
-              required
-              autocomplete="tel"
-            >
+            <input type="tel" class="form-control" id="brochureMobile" name="mobile" inputmode="numeric"
+              pattern="[0-9]{10}" maxlength="10" minlength="10" required autocomplete="tel">
             <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
           </div>
           <button type="submit" class="btn btn-voyage-blue w-100 brochure-submit">
@@ -193,7 +169,6 @@
     </div>
   </div>
 </div>
-
   <footer id="contact-us" class="footer py-5">
   
   
@@ -239,7 +214,7 @@
       
       <div class="col-md-4">
         <h4 class="subtitle">Get in Touch</h4>
-        <form id="contact" name="Contact" method="POST"  netlify>
+        <form id="contact" name="Contact" method="POST" netlify>
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" class="form-control" name="Name" id="name" placeholder="Enter your full name" required autocomplete="">
